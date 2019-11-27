@@ -1,0 +1,100 @@
+/* General design */
+
+*{
+	margin: 0px; 
+	padding: 0px; 
+	font-family:'Zilla Slab', serif;
+	text-decoration: none;
+}
+
+html{
+
+	scroll-snap-type: y mandatory;
+	scroll-behavior: smooth;
+}
+
+/* Menu */
+
+header{
+	width: 100%;
+	height: 60px;
+	background-color: #000000;
+	position: fixed;
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Lien du header*/
+
+header a{
+	font-family: 'Zilla Slab', serif;
+	font-size: 14px;
+	text-decoration: none;
+	cursor: pointer;
+	color: #ffffff;
+}
+
+/* surlignage texte quand dessus */
+
+a:hover {
+	text-decoration: underline;
+	color: #ffffff;
+}
+
+/* dispo tout lien */
+a{
+	text-decoration: none;
+}
+
+/* Dispo toute liste */
+li{
+	float: right;
+	list-style: none;
+	margin-left: 3vw;
+	color: #ffffff;
+	margin-top: -1vh;
+	font-family: 'Zilla Slab', serif;
+	text-decoration: none;
+	text-transform: uppercase;
+
+}
+
+ul{
+	cursor: pointer;
+	font-family: 'Zilla Slab', serif;
+	margin-top: 2%;
+	display: flex;
+}
+
+
+.sous-header{
+	display: flex;
+}
+
+/* disposition du logo*/
+
+#logo{
+	margin-right: 3vw;
+	height: 45px;
+
+}
+
+.selectpicker{
+	height: 23px;
+	margin-top: 14px;
+	margin-right: 25px;
+}
+
+option{
+	font-size: 30px;
+	color: #ffffff;
+}
+
+.first h1{
+	font-family: 'Zilla Slab', serif;
+	font-size: 25px;
+	margin-left: 3vw;
+}
+
+/* class : scrool-snap-align: start;
