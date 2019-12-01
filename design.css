@@ -38,8 +38,7 @@ header a{
 /* surlignage texte quand dessus */
 
 a:hover {
-	text-decoration: underline;
-	color: #ffffff;
+	color: #ff4f5e
 }
 
 /* dispo tout lien */
@@ -139,7 +138,7 @@ hr {
 .pattern img{
 	width: 22vw;
 	height: 20vw;
-	margin-top: 0%;
+	margin-top: -1%;
 	margin-left: 55%;
 }
 
@@ -163,7 +162,28 @@ button{
 	color: #ffffff;
 	font-size: 20px;
 	margin-right: 8%;
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	/*box-shadow: 0 8px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);*/
+	border-radius: 20px;
+	box-shadow: 5px 5px #999;
+}
+
+button:hover {
+	background-color: white; 
+	color: black;
+}
+
+.button:active {
+	background-color: #000000;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+  }
+
+.logiciels hr{
+	margin-top: 7%;;
+	width: 98vw;
+	height: 5px;
+	background: #000000;
+	margin-left: 3%;
 }
 
 .logiciels ul{
@@ -173,13 +193,50 @@ button{
 .logiciels li{
 	align-items: center;
 	color: #000000;
+	margin-top: -2.5%;
 }
 
-.logiciels hr{
-	margin-top: 6%;;
-	width: 98vw;
-	height: 5px;
-	background: #000000;
-	margin-left: 2%;
+li {
+	font-family:'Zilla Slab', serif;
 }
+
+.graph:hover{
+	color: #ff4f5e
+}
+
+.bureau:hover{
+	color: #54ffbd
+}
+
+.outils:hover {
+	color: #6e008b
+}
+
+.projet:hover {
+	color: #fff44f;
+}
+
+.tout:hover{
+	color: #959595;
+}
+
+
+.box{
+	border-radius: 7px;
+	padding-top: 3vh;
+	padding-bottom: 3vh;
+	padding-left: 6vw;
+	padding-right: 6vw;
+	border-style: solid;
+	background-color: black;
+	color: white;
+}
+
+.box p{
+	color: white;
+}
+
+
+
+
 /* class : scrool-snap-align: start;
