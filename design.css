@@ -5,6 +5,8 @@
 	padding: 0px; 
 	font-family:'Zilla Slab', serif;
 	text-decoration: none;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
 }
 
 html{
@@ -236,6 +238,128 @@ li {
 	color: white;
 }
 
+.contenu{
+	text-align: center;
+}
+
+
+
+/*.Wings{
+	width:70vw;
+	height:200px;
+	background:#FFF;
+	margin:40px auto;
+	-webkit-box-shadow: 0 10px 6px -6px #777;
+	-moz-box-shadow: 0 10px 6px -6px #777;
+	box-shadow: 0 10px 6px -6px #777; 
+}
+
+.boxheader{
+	background-color: black;
+	display: flex;
+	align-items: center;
+	width: 70vw;
+	height: 10vh;
+}
+
+.boxheader label{
+	color: white;
+}
+
+.boxheader img{
+	align-items: center;
+	justify-content: space-between;
+	display: flex;
+	width: 3vw;
+	height: 5vh;
+}
+
+.boxheader{
+	background-color: black;
+	display: flex;
+	align-items: center;
+	width: 70vw;
+	height: 10vh;
+}*/
+
+.accordion input {
+	display: none;
+}
+
+.accordion label {
+	width:70vw;
+	height: 10vh;
+	margin: auto;
+	background: #000;
+	color: white;
+	border-radius: .25em;
+	cursor: pointer;
+	display: block;
+	margin-bottom: .125em;
+	padding: .25em 1em;
+	z-index: 20;
+	-webkit-box-shadow: 0 10px 6px -6px #777;
+	-moz-box-shadow: 0 10px 6px -6px #777;
+	box-shadow: 0 10px 6px -6px #777;
+}
+.accordion #Wings label:hover {
+	background: #ff4f5e;
+}
+.accordion #phenix label:hover {
+	background: #54ffbd;
+}
+
+.accordion #xampp label:hover {
+	background: #6e008b;
+}
+
+
+.accordion #Wings input:checked + label {
+	background: #ff4f5e;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	color: white;
+	margin-bottom: 0;
+}
+
+.accordion #phenix input:checked + label {
+	background: #54ffbd;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	color: white;
+	margin-bottom: 0;
+}
+
+.accordion #xampp input:checked + label {
+	background: #6e008b;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	color: white;
+	margin-bottom: 0;
+}
+
+.accordion input:checked + label {
+	background: #ccc;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	color: white;
+	margin-bottom: 0;
+}
+.accordion article {
+	background: #f7f7f7;
+	height:0px;
+	overflow:hidden;
+	z-index:10;
+}
+.accordion article p {
+	padding: 1em;
+}
+.accordion input:checked ~ article {
+	border-bottom-left-radius: .25em;
+	border-bottom-right-radius: .25em;
+	height: auto;
+	margin-bottom: .125em;
+}
 
 
 
