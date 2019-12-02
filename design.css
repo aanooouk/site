@@ -169,7 +169,6 @@ button{
 	color: #ffffff;
 	font-size: 20px;
 	margin-right: 8%;
-	/*box-shadow: 0 8px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);*/
 	border-radius: 20px;
 	box-shadow: 5px 5px #999;
 }
@@ -243,7 +242,7 @@ li {
 	color: white;
 }
 
-.contenu{
+#contenu{
 	text-align: center;
 }
 
