@@ -246,8 +246,6 @@ li {
 	text-align: center;
 }
 
-
-
 /*.Wings{
 	width:70vw;
 	height:200px;
@@ -317,6 +315,10 @@ li {
 	background: #6e008b;
 }
 
+.accordion #jaune label:hover {
+	background: #fff44f;
+}
+
 
 .accordion #Wings input:checked + label {
 	background: #ff4f5e;
@@ -342,8 +344,8 @@ li {
 	margin-bottom: 0;
 }
 
-.accordion input:checked + label {
-	background: #ccc;
+.accordion #jaune input:checked + label {
+	background: #fff44f;
 	border-bottom-right-radius: 0;
 	border-bottom-left-radius: 0;
 	color: white;
