@@ -78,14 +78,18 @@ ul{
 #logo{
 	margin-right: 3vw;
 	height: 45px;
-
 }
 
 /* choix du langage */
 
+.sous-header {
+	display: flex;
+	align-items: center;
+}
+
 .selectpicker{
 	height: 23px;
-	margin-top: 14px;
+	
 	margin-right: 25px;
 }
 
@@ -101,10 +105,11 @@ option{
 
 .first h1{
 	font-family: 'Zilla Slab', serif;
-	font-size: 27px;
+	font-size: 35px;
 	margin-left: 3vw;
 	font-weight: bold;
 	font-stretch: 200%;
+	margin-left: 90px;
 }
 
 hr { 
@@ -131,7 +136,7 @@ h2 {
 
 .redistribution h2 {
 	padding-top: 50px;
-	padding-left: 20px
+	padding-left: 50px;
 }
 
 .gratuit {
@@ -141,7 +146,7 @@ h2 {
 
 .gratuit h2 {
 	padding-top: 50px;
-	padding-left: 20px
+	padding-left: 50px;
 }
 
 .code {
@@ -151,7 +156,7 @@ h2 {
 
 .code h2 {
 	padding-top: 50px;
-	padding-left: 20px
+	padding-left: 50px;
 }
 
 .grand_public {
@@ -161,7 +166,7 @@ h2 {
 
 .grand_public h2 {
 	padding-top: 50px;
-	padding-left: 20px
+	padding-left: 50px;
 }
 
 
@@ -170,16 +175,25 @@ h2 {
 	width: 50%;
 	flex-direction: row;
 	float: left;
-	margin-left: 20px;
+	margin-left: 90px;
 }
 
 /* PARTIE VISUEL */
 
 #visuel_fille_travail {
-	width: 48%;
+	width: 44%;
+	padding-right: 10px;
+
 }
 
 /* BOUTON DECOUVRIR */
+
+.discover_button {
+	margin-top: 100px;
+	display: block;
+	margin-left: 50%;
+	margin-right: 50%;
+}
 
 button {
 	border-color: transparent;
@@ -188,21 +202,36 @@ button {
 	height: 42px;
 	background-color: #ffffff;
 	color: #000000;
-	font-size: 20px;
-	margin-right: 8%;
+	display: flex;
+	flex-direction: column;
 }
-
-
 
 .button {
 	color: #000000;
 	font-size: 20px;
-	margin-top: 200px;
 	justify-content: center;
+	font-size: 25px;
 }
 
 .button:hover {
 	color: #FF4F5E;
+}
+
+.discover_button img {
+	width: 2%;
+	height: 13px;
+	display: block;
+	flex-direction: column;
+	position: absolute;
+	z-index: 1;	
+	margin-left: 40px;
+	margin-top: -2px;
+}
+
+.discover_button img:hover {
+	width: 2.2%;
+	display: flex;
+	flex-direction: column;	
 }
 
   /* FIN DU HEADER */
@@ -217,10 +246,12 @@ button {
 
 
 
-.logiciels li {
+.logiciels a  {
 	align-items: center;
 	color: #000000;
 }
+
+
 
 li {
 	font-family:'Zilla Slab', serif;
@@ -387,6 +418,76 @@ li {
 	margin-bottom: .125em;
 }
 
+/* NEWSLETTER -----------------------------------------------------------------------------*/
+
+.newsletter {
+	margin-left: 90px;
+}
+
+.newsletter hr {
+	width: 100%;
+}
+
+p {
+	margin-left: 90px;
+	font-size: 20px;
+}
+
+label {
+    display: block;
+    font: 1.1rem 'Zilla Slab', serif;
+    font-weight: bold;
+
+}
+
+input,label {
+    margin: .4rem 0;
+}
+
+input {
+	width: 450px;
+	height: 30px;
+}
+
+.email {
+	margin-left: 90px;
+}
+
+.newsletter_gauche {
+	width: 50%;
+}
+
+.newsletter_droite button {
+	width: 170px;
+	background-color: #000000; 
+}
+
+.button_send {
+	color: #FFFFFF;
+	font-size: 20px;
+	padding-left: 50px;
+	padding-top: 5px;
+	margin-bottom: 100px;
+
+}
+
+.newsletter_gauche, .newsletter_droite {
+	display: inline-block;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* FIN DE LA NEWSLETTER ---------------------------------------------------------------------*/
 
 /*FOOTER -------------------------------------------------------------------------------------*/
 
