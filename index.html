@@ -6,7 +6,7 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="stylesheet" type="text/css" href="design.css">
 <link href="https://fonts.googleapis.com/css?family=Zilla+Slab&display=swap" rel="stylesheet">
-<script type="text/javascript" href="main.js"></script>
+<script type="text/javascript" href="javascript.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -39,21 +39,15 @@
 
 <!-- Première page opensource -->
 
-	</br>
-	</br>
-	</br>
-	</br>
-
 	<div class="first" id="return_top">
-
-	</br></br></br>
+	
+	</br></br></br></br></br></br></br>
 
 		<h1> Qu'est ce que l'open source ?</h1>
 		
-	</br></br></br></br></br></br></br></br>
+	</br></br></br></br>
 
 			
-			<div class="ensemble_icones_visuel">
 			<div class="icones">
 
 				<div class="redistribution">
@@ -104,40 +98,44 @@
 				</div>
 
 <!-- DEUXIEME PAGE OPEN SOURCE ------------------------------------------------------->
-				<div id="proposition"></div>
-				<br><br><br><br><br><br><br><br>
-
-				<div class="partie_proposition">
-
-					<div class="proposition">
-						<h1>Ce qu'on vous propose</h1>
-						<br><br><br><br>
-						<p>Avec de nombreux <strong>logiciels</strong> pouvant correspondre à vos attentes, nous avons sélectionné pour vous le meilleur de <strong>l’open source </strong> !
-							<br><br><br>
-						Vous recherchez des logiciels de graphisme ? De gestion de projet ? De bureautique ? De développement ? Vous êtes au bon endroit ! </p>
-					</div>
-
-					<div class="visuel">
-						<img id="visuel_proposition" src="img/visuel_proposition.png">
-					</div>
-		
-				</div>
-
-			<br><br><
-
-				<div class="discover_button_green">
+				
+				<div id="proposition">
 					
-					<a  href="#logiciels">
-					  <span class="visually-hidden"></span>
-					  <svg class="circle" xmlns="http://www.w3.org/2000/svg">
-					    <g>
-					     <ellipse class="background" ry="40" rx="40" cy="42.5" cx="42.5" stroke-width="1"/>
-					     <ellipse class="arrow_green" class="foreground" ry="40" rx="40" cy="42.5" cx="42.5" stroke-width="2"/>
-					    </g>
-					  </svg>
-					  <a href="#logiciels"><img src="img/arrow_down_green.png"></a>
-					</a>
+					<br><br><br><br><br><br><br><br>
+
+					<div class="partie_proposition">
+
+						<div class="proposition">
+							<h1>Ce qu'on vous propose</h1>
+							<br><br><br><br>
+							<p>Avec de nombreux <strong>logiciels</strong> pouvant correspondre à vos attentes, nous avons sélectionné pour vous le meilleur de <strong>l’open source </strong> !
+								<br><br><br>
+							Vous recherchez des logiciels de graphisme ? De gestion de projet ? De bureautique ? De développement ? Vous êtes au bon endroit ! </p>
+						</div>
+
+						<div class="visuel">
+							<img id="visuel_proposition" src="img/visuel_proposition.png">
+						</div>
+		
+					</div>
+
+					<br><br>
+
+					<div class="discover_button_green">
+					
+						<a  href="#logiciels">
+						  	<span class="visually-hidden"></span>
+						  	<svg class="circle" xmlns="http://www.w3.org/2000/svg">
+							  	<g>
+							     	<ellipse class="background" ry="40" rx="40" cy="42.5" cx="42.5" stroke-width="1"/>
+							     	<ellipse class="arrow_green" class="foreground" ry="40" rx="40" cy="42.5" cx="42.5" stroke-width="2"/>
+							    </g>
+						  	</svg>
+						  	<a href="#logiciels"><img src="img/arrow_down_green.png"></a>
+						</a>
+					</div>
 				</div>
+		
 
 
 
@@ -272,7 +270,78 @@
 				<br><br><br>
 
 
-	
+	<div class="carousel">
+  <div class="carousel__nav">
+   <span id="moveLeft" class="carousel__arrow">
+        <svg class="carousel__icon" width="24" height="24" viewBox="0 0 24 24">
+    <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
+</svg>
+    </span>
+    <span id="moveRight" class="carousel__arrow" >
+      <svg class="carousel__icon"  width="24" height="24" viewBox="0 0 24 24">
+  <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
+</svg>    
+    </span>
+  </div>
+  <div class="carousel-item carousel-item--1">
+    <div class="carousel-item__image"></div>
+    <div class="carousel-item__info">
+      <div class="carousel-item__container">
+      <h2 class="carousel-item__subtitle">The grand moment </h2>
+      <h1 class="carousel-item__title">Le tour</h1>
+      <p class="carousel-item__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+      <a href="#" class="carousel-item__btn">Explore the tour</a>
+        </div>
+    </div>
+  </div>
+  <div class="carousel-item carousel-item--2">
+    <div class="carousel-item__image"></div>
+    <div class="carousel-item__info">
+      <div class="carousel-item__container">
+      <h2 class="carousel-item__subtitle">The big window </h2>
+      <h1 class="carousel-item__title">Minimal window</h1>
+      <p class="carousel-item__description">Clear Glass Window With Brown and White Wooden Frame iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+      <a href="#" class="carousel-item__btn">Read the article</a>
+        </div>
+    </div>
+  </div>
+    <div class="carousel-item carousel-item--3">
+    <div class="carousel-item__image"></div>
+    <div class="carousel-item__info">
+      <div class="carousel-item__container">
+      <h2 class="carousel-item__subtitle">Tropical palms </h2>
+      <h1 class="carousel-item__title">Palms</h1>
+      <p class="carousel-item__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+      <a href="#" class="carousel-item__btn">Explore the palms</a>
+        </div>
+    </div>
+  </div>
+  
+   <div class="carousel-item carousel-item--4">
+    <div class="carousel-item__image"></div>
+    <div class="carousel-item__info">
+      <div class="carousel-item__container">
+      <h2 class="carousel-item__subtitle">Beach </h2>
+      <h1 class="carousel-item__title">The beach </h1>
+      <p class="carousel-item__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+      <a href="#" class="carousel-item__btn">Explore the beach</a>
+        </div>
+    </div>
+  </div>
+  
+ <div class="carousel-item carousel-item--5">
+    <div class="carousel-item__image"></div>
+    <div class="carousel-item__info">
+      <div class="carousel-item__container">
+      <h2 class="carousel-item__subtitle">The white building </h2>
+      <h1 class="carousel-item__title">White building</h1>
+      <p class="carousel-item__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+      <a href="#" class="carousel-item__btn">Read the article</a>
+        </div>
+    </div>
+  </div>
+  
+</div>
 
 
 	<!-- FIN DES TOP PROJETS ----------------------------------------------------------------->
@@ -280,6 +349,8 @@
 	<!-- NEWSLETTER --------------------------------------------------------------------------->
 
 	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 
 	<div class="newsletter">
 		<h3>Newsletter</h3>
