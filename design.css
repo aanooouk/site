@@ -12,6 +12,7 @@
 a{
 	text-decoration: none;
 	color: #000000;
+	color: #ffffff;
 }
 
 html{
@@ -97,7 +98,7 @@ option{
 	color: #ffffff;
 }
 
-.first h1{
+#first h1{
 	font-family: 'Zilla Slab', serif;
 	font-size: 27px;
 	margin-left: 3vw;
@@ -184,174 +185,151 @@ button:hover {
 	transform: translateY(4px);
   }
 
-.logiciels hr{
-	margin-top: 7%;;
-	width: 98vw;
+#myBtnContainer hr{
+	margin-top: 7%;
+	width: 97vw;
 	height: 5px;
 	background: #000000;
 	margin-left: 3%;
 }
 
-.logiciels ul{
+#myBtnContainer ul{
 	align-items: center;
+	float: left;
 }
 
-.logiciels li{
+#myBtnContainer .graph:hover{
+	border-bottom: 4px solid #ff4f5e ;
+}
+
+#myBtnContainer .bureau:hover{
+	border-bottom: 4px solid #54ffbd;
+}
+
+#myBtnContainer .outils:hover {
+	border-bottom: 4px solid  #6e008b;
+}
+
+#myBtnContainer .projets:hover {
+	border-bottom: 4px solid #fff44f;
+}
+
+#myBtnContainer .active:hover{
+	border-bottom: 4px solid #959595;
+}
+
+#myBtnContainer{
 	align-items: center;
 	color: #000000;
-	margin-top: -2.5%;
+	margin-bottom: 10%;
+}
+
+#myBtnContainer li{
+	align-items: center;
+	color: #000000;
+	margin-top: 10%;
+	margin-bottom: 10%;
 }
 
 li {
 	font-family:'Zilla Slab', serif;
 }
 
-.graph:hover{
-	color: #ff4f5e
+
+.container{
+	flex-wrap:wrap;
+	overflow: hidden;
 }
 
-.bureau:hover{
-	color: #54ffbd
-}
-
-.outils:hover {
-	color: #6e008b
-}
-
-.projet:hover {
-	color: #fff44f;
-}
-
-.tout:hover{
-	color: #959595;
-}
-
-
-.box{
-	border-radius: 7px;
-	padding-top: 3vh;
-	padding-bottom: 3vh;
-	padding-left: 6vw;
-	padding-right: 6vw;
-	border-style: solid;
-	background-color: black;
-	color: white;
-}
-
-.box p{
-	color: white;
-}
-
-#contenu{
-	text-align: center;
-}
-
-/*.Wings{
-	width:70vw;
-	height:200px;
-	background:#FFF;
-	margin:40px auto;
-	-webkit-box-shadow: 0 10px 6px -6px #777;
-	-moz-box-shadow: 0 10px 6px -6px #777;
-	box-shadow: 0 10px 6px -6px #777; 
-}
-
-.boxheader{
-	background-color: black;
-	display: flex;
-	align-items: center;
-	width: 70vw;
-	height: 10vh;
-}
-
-.boxheader label{
-	color: white;
-}
-
-.boxheader img{
-	align-items: center;
-	justify-content: space-between;
-	display: flex;
-	width: 3vw;
-	height: 5vh;
-}
-
-.boxheader{
-	background-color: black;
-	display: flex;
-	align-items: center;
-	width: 70vw;
-	height: 10vh;
-}*/
-
-.accordion input {
+.container input {
 	display: none;
 }
 
-.accordion label {
+.container label {
 	width:70vw;
 	height: 10vh;
 	margin: auto;
 	background: #000;
 	color: white;
+	font-family: 'Zilla Slab', serif;
 	border-radius: .25em;
 	cursor: pointer;
 	display: block;
 	margin-bottom: .125em;
-	padding: .25em 1em;
+	padding: 1.25em 1em;
 	z-index: 20;
 	-webkit-box-shadow: 0 10px 6px -6px #777;
 	-moz-box-shadow: 0 10px 6px -6px #777;
 	box-shadow: 0 10px 6px -6px #777;
 }
-.accordion #Wings label:hover {
+
+label strong { 
+	float: left;
+	font-size: 20px;
+
+}
+
+.container .graph label:hover {
 	background: #ff4f5e;
 }
-.accordion #phenix label:hover {
+.container .bureau label:hover {
 	background: #54ffbd;
 }
 
-.accordion #xampp label:hover {
+.container .outils label:hover {
 	background: #6e008b;
 }
 
-.accordion #jaune label:hover {
+.container .projets label:hover {
 	background: #fff44f;
 }
 
+.container img{
+	width: 7%;
+	height: 7%;
+	float: left;
+	margin-left: 15%;
+	margin-top: 1%;
+	/*border:3px solid black*/
+	
 
-.accordion #Wings input:checked + label {
-	background: #ff4f5e;
+}
+.container {
+	text-align: center;
+	align-items: center;
+    justify-content: space-around;
+    display: flex;	
+}
+
+.container label img{
+	width: 3vw;
+	height: 6vh;
+	margin-top: -1%;
+	margin-left: 10%;
+	
+}
+
+.container p{
+	margin-right: 18%;
+	margin-left: 20%;
+	margin-top: 2%;
+	margin-bottom: 5%;
+	
+	
+
+}
+
+.container .graph .bureau .outils .projets .input:checked + label {
+	background: black;
 	border-bottom-right-radius: 0;
 	border-bottom-left-radius: 0;
 	color: white;
 	margin-bottom: 0;
+	
 }
 
-.accordion #phenix input:checked + label {
-	background: #54ffbd;
-	border-bottom-right-radius: 0;
-	border-bottom-left-radius: 0;
-	color: white;
-	margin-bottom: 0;
-}
 
-.accordion #xampp input:checked + label {
-	background: #6e008b;
-	border-bottom-right-radius: 0;
-	border-bottom-left-radius: 0;
-	color: white;
-	margin-bottom: 0;
-}
-
-.accordion #jaune input:checked + label {
-	background: #fff44f;
-	border-bottom-right-radius: 0;
-	border-bottom-left-radius: 0;
-	color: white;
-	margin-bottom: 0;
-}
-.accordion article {
+.container article {
 	background: #f7f7f7;
 	height:0px;
 	width: 70vw;
@@ -360,16 +338,74 @@ li {
 	display: flex;
 	margin: auto
 }
-.accordion article p {
+.container article p {
 	padding: 1em;
 }
-.accordion input:checked ~ article {
+.container input:checked ~ article {
 	border-bottom-left-radius: .25em;
 	border-bottom-right-radius: .25em;
 	height: auto;
 	margin-bottom: .125em;
 }
 
+.filterDiv {
+	display: none; /* Hidden by default */
+  }
+
+ /* The "show" class is added to the filtered elements */
+ .show {
+	display: block;
+  }
+
+/*FOOTER -------------------------------------------------------------------------------------*/
+
+footer {
+	width: 100vw;
+	height: 10vh;
+	background-color: #000000;
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer img {
+	width: 50px;
+	margin-top: 10px;
+	z-index: 1;
+}
+
+.mentions {
+	margin-top: 0%;
+	margin-left: 15px;
+	width: 227px;
+	color: white;
+}
+
+#return_top img {
+	display: flex;
+}
+
+/* ICONES RESEAUX SOCIAUX MOZILLA */
+
+.instagram{
+	width: 40px;
+	height: 30px;
+	margin-top: 13px;
+}
+.github{
+	width: 33px;
+	height: 30px;
+	margin-top: 13px;
+}
+
+.twitter{
+	width: 50px;
+	height: 48px;
+	margin-top: 5px;
+
+}
+
+/* FIN DU FOOTER ---------------------------------------------------------------------------*/
 
 
 /* class : scrool-snap-align: start;
