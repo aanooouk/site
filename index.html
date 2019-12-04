@@ -1,49 +1,402 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html>
 <head>
-	<title>Fondation Mozilla</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=Zilla+Slab&display=swap" rel="stylesheet">
+<title>Fondation Mozilla</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="design.css">
+<link href="https://fonts.googleapis.com/css?family=Zilla+Slab&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
-	<!-- MENU -->
+<!-- Menu -->
+	<header>
+
+	<nav>
+		 <ul>
+				<li><a href="#logiciels">LOGICIELS OPEN SOURCE</a></li>
+				<li><a href="#top">TOP PROJETS</a></li>
+				<li><a href="#newsletter">NEWSLETTER</a></li>
+			</ul>
+		</nav>
+	
+		<!-- choix language -->
+		<div class="sous-header">
+			<select class="selectpicker" data-width="fit">
+			    <option>&#x1F1EB;&#x1F1F7; Français</option>
+			    <option>&#x1F1EC;&#x1F1E7; English</option>
+			  	<option>&#x1F1EA;&#x1F1F8; Español</option>
+			</select>
+
+			<a href="https://foundation.mozilla.org/fr/"><img id="logo" src="img/logo.jpeg" alt="logo"></a>
+		</div>
+	</header>
+
+<!--Fin du header-->
+		
+
+<!-- Première page opensource -->
+
+	<div class="first" id="return_top">
+	
+	</br></br></br></br></br></br></br>
+
+		<h1> Qu'est ce que l'open source ?</h1>
+		
+	</br></br></br></br>
+
+			
+			<div class="icones">
+
+				<div class="redistribution">
+					<img src="img/icone_redistribution.png">
+					<h2>Des possibilité de <strong>redistribution</strong></h2>
+				</div>
+
+				</br>
+
+				<div class="gratuit">
+					<img src="img/icone_gratuit.png">
+					<h2>De la <strong>gratuité</strong></h2>
+				</div>
+
+				</br>
+
+				<div class="code">
+					<img src="img/icone_code.png">
+					<h2>Un accès au <strong>code source</strong> du logiciel</h2>
+				</div>
+
+				</br>
+
+				<div class="grand_public">
+					<img src="img/icone_public.png">
+					<h2>Une <strong>mise à disposition</strong> au grand public</h2>
+				</div>
+			
+			</div>
+
+				<div class="visuel">
+					<img id="visuel_fille_travail" src="img/visuel_fille_travail.png">
+				</div>
+		
+			</div>
+
+				<div class="discover_button">
+					<a href="#proposition">
+					  <span class="visually-hidden"></span>
+					  <svg class="circle" xmlns="http://www.w3.org/2000/svg">
+					    <g>
+					     <ellipse class="background" ry="40" rx="40" cy="42.5" cx="42.5" stroke-width="1"/>
+					     <ellipse class="foreground" ry="40" rx="40" cy="42.5" cx="42.5" stroke-width="2"/>
+					    </g>
+					  </svg>
+					  <a href="#proposition"><img src="img/arrow_down.png"></a>
+					</a>
+				</div>
+
+<!-- DEUXIEME PAGE OPEN SOURCE ------------------------------------------------------->
+				
+				<div id="proposition">
+					
+					<br><br><br><br><br><br><br><br>
+
+					<div class="partie_proposition">
+
+						<div class="proposition">
+							<h1>Ce qu'on vous propose</h1>
+							<br><br><br><br>
+							<p>Avec de nombreux <strong>logiciels</strong> pouvant correspondre à vos attentes, nous avons sélectionné pour vous le meilleur de <strong>l’open source </strong> !
+								<br><br><br>
+							Vous recherchez des logiciels de graphisme ? De gestion de projet ? De bureautique ? De développement ? Vous êtes au bon endroit ! </p>
+						</div>
+
+						<div class="visuel">
+							<img id="visuel_proposition" src="img/visuel_proposition.png">
+						</div>
+		
+					</div>
+
+					<br><br>
+
+					<div class="discover_button_green">
+					
+						<a  href="#logiciels">
+						  	<span class="visually-hidden"></span>
+						  	<svg class="circle" xmlns="http://www.w3.org/2000/svg">
+							  	<g>
+							     	<ellipse class="background" ry="40" rx="40" cy="42.5" cx="42.5" stroke-width="1"/>
+							     	<ellipse class="arrow_green" class="foreground" ry="40" rx="40" cy="42.5" cx="42.5" stroke-width="2"/>
+							    </g>
+						  	</svg>
+						  	<a href="#logiciels"><img src="img/arrow_down_green.png"></a>
+						</a>
+					</div>
+				</div>
+		
 
 
-	<!-- HEADER -->
 
 
-	<!-- TOP PROJETS -->
+<!-- PARTIE LOGICIELS ----------------------------------------------------------------->
+				
+				<div id="logiciels"></div>
+				
 
-	<!-- PARTIE 1 -->
-	<div class="Partie-1">
-		<p>Lorem Ipsum</p>
+				<div class="logiciels">
+				<hr/>
+					<ul>
+						<li class="box"><p>Logiciels de :</p></li>
+						<a href="#wings"><li class="graph">Graphisme</li></a>
+						<a href="#phenix"><li class="bureau">Bureautique</li></a>
+						<a href="#xampp"><li class="outils">Outils</li></a>
+						<a href="#jaune"><li class="projet">Projet</li></a>
+						<a href="#contenu"><li class="tout">Tout</li></a>
+					</ul>
+
+			</div>
+
+		
+		
 	</div>
 
-	<!-- PARTIE 2 -->
-	<div class="Partie-2">
-		<p>Lorem Ipsum</p>
+
+</br>
+</br>
+</br>
+</br>
+</br>
+
+
+	<div id="contenu">
+			<section class="accordion">
+				<div id="Wings" >
+					<input type="checkbox" id="check-1" />
+					<label for="check-1"><strong>Wings 3D</strong></label>
+					<article>
+						<p>Lorem ipsum </p>
+					</article>
+				</div>
+
+				<div id="Wings" >
+					<input type="checkbox" id="check-2" />
+					<label for="check-2"><strong>Krita</strong></label>
+					<article>
+						<p>Lorem ipsum </p>
+					</article>
+				</div>
+
+				<div id="phenix" >
+					<input type="checkbox" id="check-3" />
+					<label for="check-3"><strong>Phenix Agenda</strong></label>
+					<article>
+						<p>Lorem ipsum </p>
+					</article>
+				</div>
+			
+				<div id="xampp">
+					<input type="checkbox" id="check-4" />
+					<label for="check-4"><strong>Xampp</strong></label>
+					<article>
+						<p>Lorem ipsum </p>
+					</article>
+				</div>
+
+				<div id="Wings" >
+					<input type="checkbox" id="check-5" />
+					<label for="check-5"><strong>Inkscape</strong></label>
+					<article>
+						<p>Lorem ipsum </p>
+					</article>
+				</div>
+
+				<div id="xampp" >
+					<input type="checkbox" id="check-6" />
+					<label for="check-6"><strong>Oracle VM Virtual</strong></label>
+					<article>
+						<p>Lorem ipsum </p>
+					</article>
+				</div>
+
+				<div id="xampp" >
+					<input type="checkbox" id="check-7" />
+					<label for="check-7"><strong>Firefox</strong></label>
+					<article>
+						<p>Lorem ipsum </p>
+					</article>					
+				</div>
+
+				<div id="phenix">
+					<input type="checkbox" id="check-8" />
+					<label for="check-8"><strong>Scenari</strong></label>
+					<article>
+						<p>Lorem ipsum </p>						
+					</article>
+				</div>
+
+				<div id="xampp" >
+					<input type="checkbox" id="check-9" />
+					<label for="check-9"><strong>Filezilla</strong></label>
+					<article>
+						<p>Lorem ipsum </p>
+					</article>				
+				</div>
+
+				<div id="Wings" >
+					<input type="checkbox" id="check-10" />
+					<label for="check-10"><strong>Dia</strong></label>
+					<article>
+						<p>Lorem ipsum </p>
+					</article>				
+				</div>
+			</section>
+		</div>
 	</div>
 
-	<!-- PARTIE 3 -->
-	<div class="Partie-3">
-		<p>Lorem Ipsum</p>
+	<!-- TOP PROJETS ------------------------------------------------------------------------->
+
+	<div id="top"></div>
+
+	<br><br><br><br><br>
+
+				<div class="actualité">
+					<h3>Actualité</h3>
+					<br>
+					<hr>
+				</div>
+				
+				<p>Ces projets sont promu par la Fondation Mozilla</p>
+
+				
+
+
+	<div class="carousel">
+  <div class="carousel__nav">
+   <span id="moveLeft" class="carousel__arrow">
+        <svg class="carousel__icon" width="24" height="24" viewBox="0 0 24 24">
+    <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
+</svg>
+    </span>
+    <span id="moveRight" class="carousel__arrow" >
+      <svg class="carousel__icon"  width="24" height="24" viewBox="0 0 24 24">
+  <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
+</svg>    
+    </span>
+  </div>
+  <div class="carousel-item carousel-item--1">
+    <div class="carousel-item__image"></div>
+    <div class="carousel-item__info">
+      <div class="carousel-item__container">
+      <h2 class="carousel-item__subtitle">Reconnaissance faciale</h2>
+      <h1 class="carousel-item__title">Reconnaissance faciale</h1>
+      <p class="carousel-item__description">La reconnaissance faciale est actuellement considérée comme une innovation technologique basée sur l’apprentissage automatique qui améliore la sécurité, devenant ainsi votre code pour deverouiller votre téléphone, effectuer des paiement mobile ou encore de la surveillance en masse dans certain pays.</p>
+      <a href="https://www.comuzi.xyz/invisiblemask.html" class="carousel-item__btn">Voir le site</a>
+        </div>
+    </div>
+  </div>
+  <div class="carousel-item carousel-item--2">
+    <div class="carousel-item__image"></div>
+    <div class="carousel-item__info">
+      <div class="carousel-item__container">
+      <h2 class="carousel-item__subtitle">Ingénieurs en logiciels libres</h2>
+      <h1 class="carousel-item__title">Posse</h1>
+      <p class="carousel-item__description">Posse est un programme de mentorat entre pairs qui donne aux participants l’OSS des compétences en leadership ouvert, ainsi que des connaissances et des outils pratiques pour la construction d'une communautés open source durables et saines. Le programme POSSE couvrira les principes suivants: leadership ouvert, licences en open source, métriques permettant de mesurer la santé du projet, moyens de développer votre communauté et ça durabilité.</p>
+      <a href="https://posse.community/" class="carousel-item__btn">Voir le site</a>
+        </div>
+    </div>
+  </div>
+    <div class="carousel-item carousel-item--3">
+    <div class="carousel-item__image"></div>
+    <div class="carousel-item__info">
+      <div class="carousel-item__container">
+      <h2 class="carousel-item__subtitle">Face cachée de la publicité en ligne</h2>
+      <h1 class="carousel-item__title">Face cachée </h1>
+      <p class="carousel-item__description">Nous faisons confiance au secteur de la publicité lorsqu'il est dit que la publicité ciblée est une solution gagnante: les utilisateurs voient les annonces pertinentes, les annonceurs atteignent le bon public et les paye pour le contenu. Ce n'est que lorsque nous examinons de plus près les rouages ​​de la publicité ciblée que nous comprenons les differentes implications.</p>
+      <a href="https://medium.com/@ka.iwanska/mozfest-2019-the-hidden-face-of-online-advertising-8585e26c43fc" class="carousel-item__btn">Voir le site</a>
+        </div>
+    </div>
+  </div>
+  
+   <div class="carousel-item carousel-item--4">
+    <div class="carousel-item__image"></div>
+    <div class="carousel-item__info">
+      <div class="carousel-item__container">
+      <h2 class="carousel-item__subtitle">Une bibliothèque numérique à code source ouvert pour les Africains </h2>
+      <h1 class="carousel-item__title">Code source ouvert </h1>
+      <p class="carousel-item__description">Seinfo est une bibliothèque open source permettant aux Africains d’acquérir des compétences numériques nécessaires pour pouvoir travailler en freelance , à distance ou en entrepreneuriat.</p>
+      <a href="https://www.seinfo.org/" class="carousel-item__btn">Voir le site</a>
+        </div>
+    </div>
+  </div>
+  
+ <div class="carousel-item carousel-item--5">
+    <div class="carousel-item__image"></div>
+    <div class="carousel-item__info">
+      <div class="carousel-item__container">
+      <h2 class="carousel-item__subtitle">Our data futur</h2>
+      <h1 class="carousel-item__title">Our data futur</h1>
+      <p class="carousel-item__description">Notre environnement numérique évolue rapidement. Personne ne sait exactement à quoi cela va ressembler dans cinq ou dix ans, mais nous savons que la manière dont nous produisons et partageons nos données changera là où nous aboutirons.</p>
+      <a href="https://privacyinternational.org/long-read/3088/our-data-future" class="carousel-item__btn">Voir le site</a>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+	<!-- FIN DES TOP PROJETS ----------------------------------------------------------------->
+
+	<!-- NEWSLETTER --------------------------------------------------------------------------->
+<div id="newsletter"></div>
+
+
+	<div class="newsletter" >
+		<h3>Newsletter</h3>
+		<br>
+		<hr>
 	</div>
 
-	<!-- PARTIE 4 -->
-	<div class="Partie-4">
-		<p>Lorem Ipsum</p>
+	<br><br><br>
+
+	<div class="newsletter_gauche">
+		<p>Abonnez-vous à notre newsletter pour être au courant de toute les nouveauté !</p>
+
+		<br><br><br>
+
+		<div class="email">
+			<label for="email">Votre E-mail</label>
+			<input type="email" id="email" pattern=".+@globex.com" size="30" required>
+		</div>
 	</div>
 
+	<div class="newsletter_droite">
+		<button><a href="#" class="button_send">Envoyer</a></button>
+	</div>
 
-	<!-- LOGICIELS -->
+	<br><br><br><br><br>
 
+	<!-- NEWSLETTER --------------------------------------------------------------------------->
 
-	<!-- NEWSLETTER -->
+	<!-- FOOTER -------------------------------------------------------------------------------->
 
+	<footer>
+		<div class="mentions">
+			<a href="#">Mentions légales</a>
+		</div>
+		<a href="#return_top"><img src="img/arrow_return_top.png"></a>
+		<div class="reseaux_mozilla">
+			<li><a href="https://www.instagram.com/mozilla/"><img class="instagram" src="img/instagram.png"></a></li>
+			<li><a href="https://github.com/mozilla/foundation.mozilla.org/"><img class="github" src="img/github.png"></a></li>
+			<li><a href="https://twitter.com/mozilla"><img class="twitter" src="img/twitter.png"></a></li>
+		</div>
+	</footer>
 
-	<!-- FOOTER -->
-
+	<!-- FIN DU FOOTER ------------------------------------------------------------------------>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="javascript.js"></script>
 </body>
+
 </html>
