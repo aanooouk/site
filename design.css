@@ -20,6 +20,11 @@ html{
 	scroll-behavior: smooth;
 }
 
+html, body {
+	width: 100%;
+	height: 100%;
+} 
+
 /* HEADER MENU */
 
 header{
@@ -322,7 +327,7 @@ a:hover:after {
 #visuel_proposition {
 	width: 80%;
 	margin-left: 160px;
-	margin-top: -30px;
+	margin-top: 20px;
 	display:flex;
 }
 
@@ -578,19 +583,24 @@ li {
 
 .actualité hr {
 	width: 90%;
+	margin-bottom: 30px;
 }
 
 /* CAROUSEL - SLIDER DES TOP PROJETS ---------------------------*/
+
 
 .carousel {
     width: 100%;
     height: 100%;
     display: flex;
     max-width: 900px;
-    max-height: 550px;   
-    overflow: hidden;
-  position: absolute;
-  margin-left: 400px;
+    max-height: 550px;  
+    margin-left: 20%;
+    margin-bottom:30px; 
+    margin-top: 30px;
+    overflow: visible;
+  	position: relative;
+  	z-index: 0;
 }
 
 .carousel-item {
@@ -623,7 +633,6 @@ li {
   
   order: 1;
   left: 0;
-  margin: auto;
   padding: 0 40px;
   width: 40%;
 
@@ -642,14 +651,14 @@ li {
   
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
    position:relative;
-  transform: translateX(100%);
+
   transition: 0.6s all ease-in-out;
 }
 
 .carousel-item__subtitle {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Zilla Slab', serif;
     letter-spacing: 3px;
     font-size: 10px;
     text-transform: uppercase;
@@ -658,14 +667,14 @@ li {
     font-weight: 700;
     transform: translateY(25%);
     opacity: 0;
-    visibility: visible;
+    visibility: hidden;
     transition: 0.4s all ease-in-out;
 }
 
 .carousel-item__title {
     margin: 15px 0 0 0;
-    font-family: 'Playfair Display', serif;
-    font-size: 44px;
+    font-family: 'Zilla Slab', serif;
+    font-size: 31px;
     line-height: 45px;
     letter-spacing: 3px;
     font-weight: 700;
@@ -674,46 +683,49 @@ li {
     opacity: 0;
     visibility: hidden;
     transition: 0.6s all ease-in-out;
+
+
 }
 
 .carousel-item__description {
     transform: translateY(25%);
     opacity: 0;
-    visibility: visible;
+    visibility: hidden;
     transition: 0.6s all ease-in-out;
     margin-top: 35px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Zilla Slab', serif;
     font-size: 13px;
     color: #7e7e7e;
     line-height: 22px;
     margin-bottom: 35px;
+    margin-left: 0;
 }
 
 .carousel-item--1 .carousel-item__image{
-  background-image: url('https://images.pexels.com/photos/991012/pexels-photo-991012.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-image: url('img/reconaissance_faciale.png');
 }
 
 
 .carousel-item--2 .carousel-item__image{
-  background-image: url('https://images.pexels.com/photos/921294/pexels-photo-921294.png?auto=compress&cs=tinysrgb&h=750&w=1260');
+  background-image: url('img/posse.jpg');
 }
 
 .carousel-item--3 .carousel-item__image{
-  background-image: url('https://images.pexels.com/photos/92733/pexels-photo-92733.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+  background-image: url('img/web-marketing.jpg');
 }
 
 .carousel-item--4 .carousel-item__image{
-  background-image: url('https://images.pexels.com/photos/1008732/pexels-photo-1008732.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+  background-image: url('img/africain.jpg');
 }
 
 .carousel-item--5 .carousel-item__image{
-  background-image: url('https://images.pexels.com/photos/1029614/pexels-photo-1029614.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-image: url('img/data.jpg');
 }
 
 .carousel-item__btn {
     width: 35%;
     color: #2C2C2C;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Zilla Slab', serif;
     letter-spacing: 3px;
     font-size: 11px;
     text-transform: uppercase;
@@ -771,11 +783,6 @@ li {
     opacity: 1;
   transition: 0.6s all ease-in-out;
     visibility: visible;
-}
-
-.active .carousel-item__image{ 
-transition: 0.6s all ease-in-out;
-transform: translateX(0);
 }
 
 

@@ -1,6 +1,9 @@
+/*
 $(function(){
     $('.selectpicker').selectpicker();
 });
+*/
+
 
 /* PARTIE CAROUSEL ------------------------------------------------------------------------------*/
 
@@ -40,5 +43,4 @@ $(function(){
     console.log('prev '+prev);
   }
 });
-
 /* FIN DE LA PARTIE CAROUSEL - SLIDER -------------------------------------------------*/
