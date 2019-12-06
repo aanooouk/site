@@ -15,8 +15,6 @@ a{
 }
 
 html{
-
-	scroll-snap-type: y mandatory;
 	scroll-behavior: smooth;
 }
 
@@ -234,70 +232,70 @@ h2 {
 
 .visually-hidden {
   
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  width: 1px;
-  margin: 1px;
-  margin-left: 48%;
-  margin-top: 70px;
-  padding: 0;
-  border: 0;
-  display: flex;
-  text-align: center;
+  	overflow: hidden;
+  	clip: rect(0 0 0 0);
+  	height: 1px;
+  	width: 1px;
+  	margin: 1px;
+  	margin-left: 48%;
+  	margin-top: 70px;
+  	padding: 0;
+  	border: 0;
+  	display: flex;
+  	text-align: center;
 }
 
 @keyframes occasional-arrow-bounce {
-  0% { transform: translateY(0); }
-  79% { transform: translateY(0); }
-  80% { transform: translateY(2px); }
-  100% { transform: translateY(-4px); }
+  	0% { transform: translateY(0); }
+  	79% { transform: translateY(0); }
+  	80% { transform: translateY(2px); }
+  	100% { transform: translateY(-4px); }
 }
 
 a:after {
-  color: #FF4F5E;
-  font-size: 40px;
-  top: 50%;
-  margin-top: 28px;
-  left: 50%;
-  margin-left: 0px;
-  bottom: 100px;
-  animation: occasional-arrow-bounce 3s infinite 2s alternate ease-out;
+  	color: #FF4F5E;
+  	font-size: 40px;
+  	top: 50%;
+  	margin-top: 28px;
+  	left: 50%;
+  	margin-left: 0px;
+  	bottom: 100px;
+  	animation: occasional-arrow-bounce 3s infinite 2s alternate ease-out;
 }
 
 .circle {
-  height: 124px;
-  width: 124px;
+  	height: 124px;
+  	width: 124px;
 }
   
 .background {
-  fill: transparent;
-  stroke: rgba(255, 255, 255, 0.1);
-  transition: all 200ms ease;
+  	fill: transparent;
+  	stroke: rgba(255, 255, 255, 0.1);
+  	transition: all 200ms ease;
 }
   
 .foreground {
-  fill: transparent;
-  stroke-dasharray: 377;
-  stroke-dashoffset: 377;
-  stroke: #FF4F5E;
-  transform-origin: 50% 50%;
-  transform: rotate(0deg);
-  transition: all 800ms ease;
+  	fill: transparent;
+  	stroke-dasharray: 377;
+  	stroke-dashoffset: 377;
+  	stroke: #FF4F5E;
+  	transform-origin: 50% 50%;
+  	transform: rotate(0deg);
+  	transition: all 800ms ease;
 }
     
 a:hover .foreground {
-  stroke-dashoffset: 0;
-  transform: rotate(0deg);
+  	stroke-dashoffset: 0;
+  	transform: rotate(0deg);
 }
 
 @keyframes arrow-bounce {
-  0% { transform: translateY(2px); }
-  100% { transform: translateY(-4px); }
+  	0% { transform: translateY(2px); }
+  	100% { transform: translateY(-4px); }
 }
 
 a:hover:after {
-  animation: arrow-bounce 0.5s infinite alternate ease-out;
+  	animation: arrow-bounce 0.5s infinite alternate ease-out;
 }
 
 /* PAGE 2 OPEN SOURCE ----------------------------------------------------------------*/
@@ -358,26 +356,26 @@ a:hover:after {
 }
 
 a:after {
-  color: #57FFBD;
-  font-size: 40px;
-  left: 50%;
-  margin-left: 0px;
-  animation: occasional-arrow-bounce 3s infinite 2s alternate ease-out;
+  	color: #57FFBD;
+  	font-size: 40px;
+  	left: 50%;
+  	margin-left: 0px;
+  	animation: occasional-arrow-bounce 3s infinite 2s alternate ease-out;
 }
 
 a:hover .arrow_green {
-  stroke-dashoffset: 0;
-  transform: rotate(0deg);
+  	stroke-dashoffset: 0;
+  	transform: rotate(0deg);
 }
 
 .arrow_green {
-  fill: transparent;
-  stroke-dasharray: 377;
-  stroke-dashoffset: 377;
-  stroke: #57FFBD;
-  transform-origin: 50% 50%;
-  transform: rotate(0deg);
-  transition: all 800ms ease;
+  	fill: transparent;
+  	stroke-dasharray: 377;
+  	stroke-dashoffset: 377;
+  	stroke: #57FFBD;
+  	transform-origin: 50% 50%;
+  	transform: rotate(0deg);
+  	transition: all 800ms ease;
 }
 
 /* FIN DE LA PAGE 2 ------------------------------------------------------------*/
@@ -425,23 +423,23 @@ li {
 
 
 
-.graph:hover{
+.btn_graph:hover{
 	border-bottom: 4px solid #ff4f5e;
 }
 
-.bureau:hover{
+.btn_bureau:hover{
 	border-bottom: 4px solid #54ffbd;
 }
 
-.outils:hover {
+.btn_outils:hover {
 	border-bottom: 4px solid #6e008b;
 }
 
-.projet:hover {
+.btn_projets:hover {
 	border-bottom: 4px solid #fff44f;
 }
 
-.tout:hover{
+.btn_active:hover{
 	border-bottom: 4px solid #959595;
 	color: #959595;
 }
@@ -576,6 +574,10 @@ li {
 
 /* PARTIE TOP PROJET ------------------------------------------------------------------*/
 
+.actualité {
+	margin-bottom: 30px;
+}
+
 .actualité h3 {
 	margin-left: 90px;
 	color: #000000;
@@ -583,7 +585,7 @@ li {
 
 .actualité hr {
 	width: 90%;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 
 /* CAROUSEL - SLIDER DES TOP PROJETS ---------------------------*/
@@ -594,47 +596,48 @@ li {
     height: 100%;
     display: flex;
     max-width: 900px;
-    max-height: 550px;  
-    margin-left: 20%;
+    max-height: 550px; 
     margin-bottom:30px; 
     margin-top: 30px;
     overflow: visible;
   	position: relative;
   	z-index: 0;
+  	padding-left:15%;
+  	padding-right:15%;
 }
 
 .carousel-item {
-  visibility:visible;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    justify-content: flex-end;
-      -webkit-align-items: center;
-    -webkit-justify-content: flex-end;
-    position: relative;
-    background-color: #fff;
-    flex-shrink: 0;
-   -webkit-flex-shrink: 0;
-    position: absolute;
-    z-index: 0;
-  transition: 0.6s all linear;
+	visibility:visible;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	justify-content: flex-end;
+	-webkit-align-items: center;
+	-webkit-justify-content: flex-end;
+	position: relative;
+	background-color: #fff;
+	flex-shrink: 0;
+	-webkit-flex-shrink: 0;
+	position: absolute;
+	z-index: 0;
+	transition: 0.6s all linear;
 }
 
 .carousel-item__info {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  
-    display: -webkit-flex;
-  -webkit-justify-content: center;
-  -webkit-flex-direction: column;
-  
-  order: 1;
-  left: 0;
-  padding: 0 40px;
-  width: 40%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	  
+	display: -webkit-flex;
+	-webkit-justify-content: center;
+	-webkit-flex-direction: column;
+	  
+	order: 1;
+	left: 0;
+	padding: 0 40px;
+	width: 40%;
 
 }
 
@@ -645,16 +648,15 @@ li {
     align-self: flex-end;
     flex-basis: 60%;
   
-      -webkit-order: 2;
+    -webkit-order: 2;
     -webkit-align-self: flex-end;
     -webkit-flex-basis: 60%;
   
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-   position:relative;
-
-  transition: 0.6s all ease-in-out;
+   	position:relative;
+  	transition: 0.6s all ease-in-out;
 }
 
 .carousel-item__subtitle {
@@ -702,24 +704,24 @@ li {
 }
 
 .carousel-item--1 .carousel-item__image{
-  background-image: url('img/reconaissance_faciale.png');
+  	background-image: url('img/reconaissance_faciale.png');
 }
 
 
 .carousel-item--2 .carousel-item__image{
-  background-image: url('img/posse.jpg');
+  	background-image: url('img/posse.jpg');
 }
 
 .carousel-item--3 .carousel-item__image{
-  background-image: url('img/web-marketing.jpg');
+  	background-image: url('img/web-marketing.jpg');
 }
 
 .carousel-item--4 .carousel-item__image{
-  background-image: url('img/africain.jpg');
+  	background-image: url('img/africain.jpg');
 }
 
 .carousel-item--5 .carousel-item__image{
-  background-image: url('img/data.jpg');
+  	background-image: url('img/data.jpg');
 }
 
 .carousel-item__btn {
@@ -751,7 +753,7 @@ li {
     display: inline-block;
     vertical-align: middle;
     width: 16px;
-  fill: #5d5d5d;
+  	fill: #5d5d5d;
 }
 
 .carousel__arrow {
@@ -773,15 +775,15 @@ li {
 }
 
 .active{
-   z-index: 1;
-  display: flex;
-  visibility:visible;
+   	z-index: 1;
+  	display: flex;
+ 	visibility:visible;
 }
 
 .active .carousel-item__subtitle, .active .carousel-item__title, .active .carousel-item__description,.active .carousel-item__btn{
     transform: translateY(0);
     opacity: 1;
-  transition: 0.6s all ease-in-out;
+  	transition: 0.6s all ease-in-out;
     visibility: visible;
 }
 
