@@ -30,7 +30,8 @@ header{
 	position: fixed;
 	display: flex;
     justify-content: space-between;
-    align-items: center;
+	align-items: center;
+	z-index: 1;
 }
 
 /* Lien du header*/
@@ -583,47 +584,50 @@ label strong {
     height: 100%;
     display: flex;
     max-width: 900px;
-    max-height: 550px;  
-    margin-left: 20%;
+    max-height: 550px; 
     margin-bottom:30px; 
     margin-top: 30px;
     overflow: visible;
-  	position: relative;
+  	position: absolute;
   	z-index: 0;
+  	padding-left:15%;
+	padding-right:15%;
+  	padding-left:15%;
+  	padding-right:15%;  
 }
 
 .carousel-item {
-  visibility:visible;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    justify-content: flex-end;
-      -webkit-align-items: center;
-    -webkit-justify-content: flex-end;
-    position: relative;
-    background-color: #fff;
-    flex-shrink: 0;
-   -webkit-flex-shrink: 0;
-    position: absolute;
-    z-index: 0;
-  transition: 0.6s all linear;
+	visibility:visible;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	justify-content: flex-end;
+	-webkit-align-items: center;
+	-webkit-justify-content: flex-end;
+	position: relative;
+	background-color: #fff;
+	flex-shrink: 0;
+	-webkit-flex-shrink: 0;
+	position: absolute;
+	z-index: 0;
+	transition: 0.6s all linear;
 }
 
 .carousel-item__info {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  
-    display: -webkit-flex;
-  -webkit-justify-content: center;
-  -webkit-flex-direction: column;
-  
-  order: 1;
-  left: 0;
-  padding: 0 40px;
-  width: 40%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	  
+	display: -webkit-flex;
+	-webkit-justify-content: center;
+	-webkit-flex-direction: column;
+	  
+	order: 1;
+	left: 0;
+	padding: 0 40px;
+	width: 40%;
 
 }
 
@@ -634,16 +638,15 @@ label strong {
     align-self: flex-end;
     flex-basis: 60%;
   
-      -webkit-order: 2;
+    -webkit-order: 2;
     -webkit-align-self: flex-end;
     -webkit-flex-basis: 60%;
   
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-   position:relative;
-
-  transition: 0.6s all ease-in-out;
+	position:relative;
+  	transition: 0.6s all ease-in-out;
 }
 
 .carousel-item__subtitle {
@@ -691,24 +694,24 @@ label strong {
 }
 
 .carousel-item--1 .carousel-item__image{
-  background-image: url('img/reconaissance_faciale.png');
+  	background-image: url('img/reconaissance_faciale.png');
 }
 
 
 .carousel-item--2 .carousel-item__image{
-  background-image: url('img/posse.jpg');
+  	background-image: url('img/posse.jpg');
 }
 
 .carousel-item--3 .carousel-item__image{
-  background-image: url('img/web-marketing.jpg');
+  	background-image: url('img/web-marketing.jpg');
 }
 
 .carousel-item--4 .carousel-item__image{
-  background-image: url('img/africain.jpg');
+  	background-image: url('img/africain.jpg');
 }
 
 .carousel-item--5 .carousel-item__image{
-  background-image: url('img/data.jpg');
+  	background-image: url('img/data.jpg');
 }
 
 .carousel-item__btn {
@@ -740,7 +743,7 @@ label strong {
     display: inline-block;
     vertical-align: middle;
     width: 16px;
-  fill: #5d5d5d;
+  	fill: #5d5d5d;
 }
 
 .carousel__arrow {
@@ -762,15 +765,15 @@ label strong {
 }
 
 .active{
-   z-index: 1;
-  display: flex;
-  visibility:visible;
+   	z-index: 1;
+  	display: flex;
+ 	visibility:visible;
 }
 
 .active .carousel-item__subtitle, .active .carousel-item__title, .active .carousel-item__description,.active .carousel-item__btn{
     transform: translateY(0);
     opacity: 1;
-  transition: 0.6s all ease-in-out;
+  	transition: 0.6s all ease-in-out;
     visibility: visible;
 }
 
