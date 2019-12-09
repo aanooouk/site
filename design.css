@@ -422,14 +422,13 @@ a:hover .arrow_green {
 	border-bottom: 4px solid #fff44f;
 }
 
-#myBtnContainer .active:hover{
+#myBtnContainer .all:hover{
 	border-bottom: 4px solid #959595;
 }
 
 #myBtnContainer{
 	align-items: center;
 	color: #000000;
-	margin-bottom: %;
 }
 
 #myBtnContainer li{
@@ -692,24 +691,24 @@ label strong {
 }
 
 .carousel-item--1 .carousel-item__image{
-  background-image: url('img1/reconaissance_faciale.png');
+  background-image: url('img/reconaissance_faciale.png');
 }
 
 
 .carousel-item--2 .carousel-item__image{
-  background-image: url('img1/posse.jpg');
+  background-image: url('img/posse.jpg');
 }
 
 .carousel-item--3 .carousel-item__image{
-  background-image: url('img1/web-marketing.jpg');
+  background-image: url('img/web-marketing.jpg');
 }
 
 .carousel-item--4 .carousel-item__image{
-  background-image: url('img1/africain.jpg');
+  background-image: url('img/africain.jpg');
 }
 
 .carousel-item--5 .carousel-item__image{
-  background-image: url('img1/data.jpg');
+  background-image: url('img/data.jpg');
 }
 
 .carousel-item__btn {
@@ -893,8 +892,6 @@ footer img {
 
 }
 
-div .reseaux_mozilla {
 
-}
 
 /* FIN DU FOOTER ---------------------------------------------------------------------------*/
