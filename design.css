@@ -380,7 +380,7 @@ a:hover .arrow_green {
 
 /* FIN DE LA PAGE 2 ------------------------------------------------------------*/
 
-.logiciels hr {
+#myBtnContainer hr {
 	margin-top: 7%;;
 	width: 90%;
 	height: 5px;
@@ -409,7 +409,7 @@ a:hover .arrow_green {
 	font-size: 15px;
 }
 
-.logiciels a  {
+#myBtnContainer a  {
 	align-items: center;
 	color: #000000;
 	margin-top: -10px;
@@ -422,35 +422,156 @@ li {
 }
 
 
-
-.btn_graph:hover{
+.graph:hover{
 	border-bottom: 4px solid #ff4f5e;
 }
 
-.btn_bureau:hover{
+.bureau:hover{
 	border-bottom: 4px solid #54ffbd;
 }
 
-.btn_outils:hover {
+.outils:hover {
 	border-bottom: 4px solid #6e008b;
 }
 
-.btn_projets:hover {
+.projets:hover {
 	border-bottom: 4px solid #fff44f;
 }
 
-.btn_active:hover{
+.active:hover{
 	border-bottom: 4px solid #959595;
 	color: #959595;
 }
 
+#myBtnContainer {
+	align-items: center;
+	color: #000000;
+}
 
+/* CODE ALEX --------*/
 
-#contenu{
+.container{
+	flex-wrap:wrap;
+	overflow: hidden;
+}
+
+.container input {
+	display: none;
+}
+
+.container label {
+	width:70vw;
+	height: 10vh;
+	margin: auto;
+	background: #000;
+	color: white;
+	font-family: 'Zilla Slab', serif;
+	border-radius: .25em;
+	cursor: pointer;
+	display: block;
+	margin-bottom: .125em;
+	padding: 1.25em 1em;
+	z-index: 20;
+	-webkit-box-shadow: 0 10px 6px -6px #777;
+	-moz-box-shadow: 0 10px 6px -6px #777;
+	box-shadow: 0 10px 6px -6px #777;
+}
+
+label strong { 
+	float: left;
+	font-size: 20px;
+
+}
+
+.container .graph label:hover {
+	background: #ff4f5e;
+}
+.container .bureau label:hover {
+	background: #54ffbd;
+}
+
+.container .outils label:hover {
+	background: #6e008b;
+}
+
+.container .projets label:hover {
+	background: #fff44f;
+}
+
+.container img{
+	width: 7%;
+	height: 7%;
+	float: left;
+	margin-left: 15%;
+	margin-top: 1%;
+	/*border:3px solid black*/
+	
+
+}
+.container {
 	text-align: center;
+	align-items: center;
+    justify-content: space-around;
+    display: flex;	
+}
+
+.container label img{
+	width: 3vw;
+	height: 6vh;
+	margin-top: -1%;
+	margin-left: 10%;
+	
+}
+
+.container p{
+	margin-right: 18%;
+	margin-left: 20%;
+	margin-top: 2%;
+	margin-bottom: 5%;
+	
+	
+
+}
+
+.container .graph .bureau .outils .projets .input:checked + label {
+	background: black;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	color: white;
+	margin-bottom: 0;
+	
 }
 
 
+.container article {
+	background: #f7f7f7;
+	height:0px;
+	width: 70vw;
+	overflow:hidden;
+	z-index:10;
+	display: flex;
+	margin: auto
+}
+.container article p {
+	padding: 1em;
+}
+.container input:checked ~ article {
+	border-bottom-left-radius: .25em;
+	border-bottom-right-radius: .25em;
+	height: auto;
+	margin-bottom: .125em;
+}
+
+.filterDiv {
+	display: none; /* Hidden by default */
+  }
+
+ /* The "show" class is added to the filtered elements */
+ .show {
+	display: block;
+  }
+
+  /* FIN DU CODE ALEXANDRA --------*/
 
 /*.Wings{
 	width:70vw;
