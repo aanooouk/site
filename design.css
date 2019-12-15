@@ -180,9 +180,7 @@ h2 {
 	width: 47%;
 	flex-direction: column;
 	float: left;
-	margin-left: 90px;
-	margin-right: -70px;
-	margin-bottom: 90px;
+	
 }
 
 .ensemble_icones_visuel {
@@ -1026,10 +1024,151 @@ footer img {
 
 }
 
-div .reseaux_mozilla {
+/* FIN DU FOOTER ---------------------------------------------------------------------------*/
+
+/* ------------------------------- RESPONSIVE ---------------------------------------------*/
+
+@media (max-width: 640px){
+
+/* HEADER */
+
+	header{
+		width: 100%;
+    	display: block;
+    	position: fixed;
+    }
+
+    label{
+    	float: left;
+        display: block;
+        margin-right: 30px;
+        font-size: 30px;
+    }
+
+    label span{
+    	color: white;
+    	margin-left: 20px; 
+
+    }
+
+    input {
+    	display: none;
+    }
+
+    .sous-header {
+    	display: flex;
+    	flex-direction: row;
+    	justify-content: flex-end;
+    	margin-top: 5px;
+    }
+
+    nav{
+        float: left;
+        background-color: white;
+        width: 100%;
+        display: block;
+        
+    }
+
+    nav:checked {
+        float: left;
+        background-color: black;
+        width: 100%;
+        display: block;
+        
+    }
+
+    nav ul li a{
+    	color: black;
+
+    }
+
+    #switch:checked {
+        display: block;
+        visibility: hidden;
+    }
+
+
+    ul{
+        margin: 0px;
+        width: 100%;
+        flex-direction: column;
+        border-top: 1px solid black;
+        padding-left: 0px;
+    }
+
+    li{
+        text-align: center;
+        border-bottom: 1px solid black;
+        height: 30px;
+        margin-top: 10px;
+       
+    }
+
+    /* FIN HEADER */
+
+
+    /* PARTIE 1 : OPEN SOURCE */
+
+	h1{
+		margin-left: 30px;
+		font-size: 1.5em;
+	}
+
+	.first {
+		display: flex;
+		width: 100%;
+		flex-direction: column-reverse;
+		margin: 0;
+		align-items: center;
+		order: 1-1;
+	}
+
+	.icone {
+		margin-right: 0;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.redistribution img, .gratuit img, .code img, .grand_public img {
+		width: 50%;
+		align-items: center;
+	} 
+
+	.redistribution h2, .gratuit h2, .code h2, .grand_public h2 {
+		width: 100%;
+		vertical-align: center;
+	} 
+
+	.redistribution, .gratuit, .code, .grand_public {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.visuel {
+		width: 70%;
+		margin: 0;
+		margin-top: 0px;
+		margin-bottom: 50px;
+
+	}
+
+	/* FIN DE LA PARTIE 1 : OPEN SOURCE */
+
+
+	/* PARTIE 2 : OPEN SOURCE */
+
+	.partie_proposition {
+		width: 100%;
+		flex-direction: column-reverse;
+		margin: 0;
+	}
+
+	/* FIN DE LA PARTIE 2 : OPEN SOURCE */
+
 
 }
 
-/* FIN DU FOOTER ---------------------------------------------------------------------------*/
 
 /* class : scrool-snap-align: start;
