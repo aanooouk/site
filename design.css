@@ -374,6 +374,67 @@ a:hover .arrow_green {
 
 /* FIN DE LA PAGE 2 ------------------------------------------------------------*/
 
+/*Partie logiciel*/
+
+.star-holder {
+	display:block;
+	margin-left: 47%;
+    margin-top: 2%;
+  }
+
+  .container h3{
+	margin-left: 47%;
+  }
+  
+  .star {
+	  display: inline-block;
+	  width: 18px;
+	  height: 18px;
+	  margin-left: 1px;
+	  background-repeat: no-repeat;
+	  font-style: normal;
+	  vertical-align: middle;
+  }
+  
+  .red-rated {
+	  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2218%22%20height%3D%2218%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23ff4f5e%22%20d%3D%22M9%200l2.5%206.8H18L12.6%2011l2%207L9%2013.7%203.4%2018l2-7L0%206.8h6.5z%22%2F%3E%3C%2Fsvg%3E');
+	  background-repeat: no-repeat;
+  }
+  
+  .red-partial, .gicon-star-partial {
+	  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2218%22%20height%3D%2218%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%2235%2035%2018%2018%22%3E%3Cpath%20fill%3D%22%23ff4f5e%22%20d%3D%22M44%2048.8L38.4%2053l1.9-7.1-5.3-4h6.6L44%2035%22%2F%3E%3Cpath%20fill%3D%22%23CBCACA%22%20d%3D%22M44%2035l2.4%206.9H53l-5.3%204%201.9%207.1-5.6-4.2%22%2F%3E%3C%2Fsvg%3E');
+	  background-repeat: no-repeat;
+  }
+
+  .violet-rated {
+	background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2218%22%20height%3D%2218%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%236e008b%22%20d%3D%22M9%200l2.5%206.8H18L12.6%2011l2%207L9%2013.7%203.4%2018l2-7L0%206.8h6.5z%22%2F%3E%3C%2Fsvg%3E');
+	background-repeat: no-repeat;
+}
+
+.violet-partial, .gicon-star-partial {
+	background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2218%22%20height%3D%2218%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%2235%2035%2018%2018%22%3E%3Cpath%20fill%3D%22%236e008b%22%20d%3D%22M44%2048.8L38.4%2053l1.9-7.1-5.3-4h6.6L44%2035%22%2F%3E%3Cpath%20fill%3D%22%23CBCACA%22%20d%3D%22M44%2035l2.4%206.9H53l-5.3%204%201.9%207.1-5.6-4.2%22%2F%3E%3C%2Fsvg%3E');
+	background-repeat: no-repeat;
+}
+
+.green-rated {
+	background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2218%22%20height%3D%2218%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%2354ffbd%22%20d%3D%22M9%200l2.5%206.8H18L12.6%2011l2%207L9%2013.7%203.4%2018l2-7L0%206.8h6.5z%22%2F%3E%3C%2Fsvg%3E');
+	background-repeat: no-repeat;
+}
+
+.green-partial, .gicon-star-partial {
+	background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2218%22%20height%3D%2218%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%2235%2035%2018%2018%22%3E%3Cpath%20fill%3D%22%2354ffbd%22%20d%3D%22M44%2048.8L38.4%2053l1.9-7.1-5.3-4h6.6L44%2035%22%2F%3E%3Cpath%20fill%3D%22%23CBCACA%22%20d%3D%22M44%2035l2.4%206.9H53l-5.3%204%201.9%207.1-5.6-4.2%22%2F%3E%3C%2Fsvg%3E');
+	background-repeat: no-repeat;
+}
+
+.yellow-rated {
+	background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2218%22%20height%3D%2218%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23fff44f%22%20d%3D%22M9%200l2.5%206.8H18L12.6%2011l2%207L9%2013.7%203.4%2018l2-7L0%206.8h6.5z%22%2F%3E%3C%2Fsvg%3E');
+	background-repeat: no-repeat;
+}
+
+.yellow-partial, .gicon-star-partial {
+	background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2218%22%20height%3D%2218%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%2235%2035%2018%2018%22%3E%3Cpath%20fill%3D%22%23fff44f%22%20d%3D%22M44%2048.8L38.4%2053l1.9-7.1-5.3-4h6.6L44%2035%22%2F%3E%3Cpath%20fill%3D%22%23CBCACA%22%20d%3D%22M44%2035l2.4%206.9H53l-5.3%204%201.9%207.1-5.6-4.2%22%2F%3E%3C%2Fsvg%3E');
+	background-repeat: no-repeat;
+}
 
 
 #myBtnContainer hr{
@@ -382,29 +443,6 @@ a:hover .arrow_green {
 	height: 5px;
 	background: #000000;
 	margin-left: 8%;
-}
-
-
-
-.box{
-	border-radius: 10px 0px 0px 10px;
-	padding-top: 1.5vh;
-	padding-bottom: 1.5vh;
-	padding-left: 1vw;
-	padding-right: 1vw;
-	background-color: black;
-	color: white;
-	margin-top: -23px;
-	margin-right: 2px;
-	margin-left: 8%
-}
-
-.box p{
-	color: white;
-	margin-right: 10px;
-	margin-left: 10px;
-	padding-left: 10px;
-	font-size: 15px;
 }
 
 #myBtnContainer .graph:hover{
@@ -435,7 +473,7 @@ a:hover .arrow_green {
 #myBtnContainer li{
 	align-items: center;
 	color: #000000;
-	margin-bottom: 10%;
+	margin-bottom: 5%;
 }
 
 li {
@@ -497,10 +535,82 @@ label strong {
 	float: left;
 	margin-left: 15%;
 	margin-top: 1%;
-	/*border:3px solid black*/
-	
+}
+
+/* avis commentaire
+
+.fa-star:hover {
+  transform: scale(1.1);
+}
+
+.review-container {
+  display: flex;
+  flex-wrap: wrap;
 
 }
+ 
+
+.review {
+    flex: 0 1 33.333%;
+	padding: 30px;
+}
+   
+    .review-stars,
+    .review-title,
+    .review-reviewer {
+      display: flex;
+      justify-content: center;
+    }
+
+    .review-stars,
+    .review-title,
+    .review-text,
+    .review-reviewer {
+      padding: 0 0 30px;
+    }
+    .review-stars,
+    .review-title {
+      color: #000000;
+      letter-spacing: 1px;
+    }
+
+    .review-stars {
+	  color: #ff4f5e;
+	}
+      svg {
+        margin: 0 5px;
+      }
+
+    .review-text,
+    .review-reviewer {
+      color: #666666;
+      line-height: 20px;
+      letter-spacing: 1px;
+      text-align: justify;
+    }
+
+    .review-reviewer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+	  align-self: center;
+	}
+      .avatar,
+      .reviewer {
+        margin: 0 5px;
+      } */
+
+
+.container article img{
+	width: 20vw;
+	height: 15vh;
+	margin-top: 2%;
+    margin-right: 4%;
+	margin-left: 0%;
+	margin-bottom: 2%;
+}
+
 .container {
 	text-align: center;
 	align-items: center;
@@ -512,17 +622,16 @@ label strong {
 	width: 3vw;
 	height: 6vh;
 	margin-top: -1%;
-	margin-left: 10%;
-	
+	margin-left: 38%;
+    margin-right: -28%;
 }
 
-.container p{
+.container h1{
 	margin-right: 18%;
 	margin-left: 20%;
-	margin-top: 2%;
-	margin-bottom: 5%;
-	
-	
+	margin-bottom: 2%;
+	font-size: 20px;
+	padding: 1em;
 
 }
 
@@ -547,6 +656,7 @@ label strong {
 }
 .container article p {
 	padding: 1em;
+	text-align: left;
 }
 .container input:checked ~ article {
 	border-bottom-left-radius: .25em;
@@ -895,6 +1005,219 @@ footer img {
 
 }
 
-
-
 /* FIN DU FOOTER ---------------------------------------------------------------------------*/
+/* Media Queries */ 
+
+@media (max-width: 800px){
+
+	/* HEADER */
+	
+		header{
+			width: 100%;
+			display: block;
+			position: fixed;
+		}
+	
+		label{
+			float: left;
+			display: block;
+			margin-right: 30px;
+			font-size: 30px;
+		}
+	
+		label span{
+			color: white;
+			margin-left: 20px; 
+	
+		}
+	
+		input {
+			display: none;
+		}
+	
+		.sous-header {
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-end;
+			margin-top: 5px;
+		}
+	
+		nav{
+			float: left;
+			background-color: white;
+			width: 100%;
+			display: none;
+		}
+	
+	
+		nav ul li a{
+			color: black;
+		}
+	
+		#switch:checked {
+			display: block;
+			visibility: hidden;
+		}
+	
+	
+		ul{
+			margin: 0px;
+			width: 100%;
+			flex-direction: column;
+			border-top: 1px solid black;
+			padding-left: 0px;
+		}
+	
+		li{
+			text-align: center;
+			border-bottom: 1px solid black;
+			height: 30px;
+			margin-top: 10px;
+		   
+		}
+	
+		/* FIN HEADER */
+	
+	
+		/* PARTIE 1 : OPEN SOURCE */
+	
+		.icones h1{
+	
+			margin-left: 30px;
+			font-size: 2em;
+		}
+	
+		.first {
+			display: flex;
+			width: 100%;
+			flex-direction: column-reverse;
+			margin-top: 0;
+			align-items: center;
+		}
+	
+		.icones {
+			width: 100%;
+			float: left;
+			display: flex;
+			flex-direction: column;
+		}
+	
+		.redistribution img, .gratuit img, .code img, .grand_public img {
+			width: 20%;
+			align-items: center;
+			margin-left: 20px;
+		} 
+	
+		.redistribution h2, .gratuit h2, .code h2, .grand_public h2 {
+			width: 100%;
+			vertical-align: center;
+			font-size: 1em;
+		} 
+	
+		.redistribution, .gratuit, .code, .grand_public {
+			align-items: center;
+			display: flex;
+			flex-direction: row;
+		}
+	
+		.visuel{
+			width:100%;
+		}
+	
+		#visuel_fille_travail {
+			width: 100%;
+		}
+	
+		.discover_button {
+			margin-top: 0px;
+			display: block;
+			margin-left: 50%;
+			margin-right: 50%;
+			text-align: center;
+		}
+	
+		.discover_button img {
+			width: 50px;
+			height: 0 auto;
+			display: block;
+			flex-direction: column;
+			position: absolute;
+			margin-left: 20px;
+			margin-top: -103px;
+		} 
+	
+		.discover_button img:hover {
+			display: none;
+		}
+	
+		.circle {
+			display: flex;
+			align-self: center;
+		}
+	
+	
+	
+		/* FIN DE LA PARTIE 1 : OPEN SOURCE */
+	
+	
+		/* PARTIE 2 : OPEN SOURCE */
+	
+		.partie_proposition {
+			flex-direction: column-reverse;
+		}
+	
+		.proposition {
+			align-self: center;
+		}
+	
+		.proposition p, .proposition h1 {
+			margin-left: 30px;
+			margin-right: 30px;
+		}
+	
+		#visuel_proposition {
+			margin-left: 0px;
+			align-self: center;
+	
+		}
+	
+		.proposition, {
+			width: 100%;
+			flex-direction: column;
+			margin: 0;
+		}
+	
+		.discover_button_green {
+			margin-top: 0px;
+			display: block;
+			margin-left: 50%;
+			margin-right: 50%;
+			align-self: center;
+		}
+	
+		.discover_button_green img {
+			width: 50px;
+			height: 0 auto;
+			display: block;
+			flex-direction: column;
+			position: absolute;
+			margin-left: 20px;
+			margin-top: -110px;
+		}
+	
+		.discover_button_green img:hover {
+			display: none;
+		}
+	
+		/* FIN DE LA PARTIE 2 : OPEN SOURCE */
+	
+	
+		/* PARTIE LOGICIELS */
+	
+		ul li {
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+		}
+	}
+	
