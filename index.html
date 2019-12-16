@@ -17,11 +17,11 @@
 
 	<nav>
 		 <ul>
-				<li><a class="hidden" href="#myBtnContainer">LOGICIELS OPEN SOURCE</a></li>
-				<li><a class="hidden" href="#top">TOP PROJETS</a></li>
-				<li><a class="hidden" href="#newsletter">NEWSLETTER</a></li>
-			</ul>
-		</nav>
+			<li><a class="hidden" href="#myBtnContainer">LOGICIELS OPEN SOURCE</a></li>
+			<li><a class="hidden" href="#top">TOP PROJETS</a></li>
+			<li><a class="hidden" href="#newsletter">NEWSLETTER</a></li>
+		</ul>
+	</nav>
 	
 		<!-- choix language -->
 		<div class="sous-header">
@@ -42,14 +42,15 @@
 
 	
 	
-	</br></br></br></br></br></br></br>
+	</br></br></br></br></br></br></br></br></br>
 
-		<h1> Qu'est ce que l'open source ?</h1>
 		
-	</br></br></br></br>
-<div class="first" id="return_top">
+	
+		<div class="first" id="return_top">
 			
 			<div class="icones">
+
+				<h1> Qu'est ce que l'open source ?</h1>
 
 				<div class="redistribution">
 					<img src="img/icone_redistribution.png">
@@ -79,14 +80,16 @@
 			
 			</div>
 
+				
+
 				<div class="visuel">
 					<img id="visuel_fille_travail" src="img/visuel_fille_travail.png">
 				</div>
 		
-			</div>
+		</div>
 
 				<div class="discover_button">
-					<a href="#proposition">
+					<a href="#propose">
 					  <span class="visually-hidden"></span>
 					  <svg class="circle" xmlns="http://www.w3.org/2000/svg">
 					    <g>
@@ -94,16 +97,17 @@
 					     <ellipse class="foreground" ry="40" rx="40" cy="42.5" cx="42.5" stroke-width="2"/>
 					    </g>
 					  </svg>
-					  <a href="#proposition"><img src="img/arrow_down.png"></a>
+					  <a href="#proposition"><img src="img/arrow_down.png" id="propose"></a>
 					</a>
 				</div>
+				
 	</div>
 
 <!-- DEUXIEME PAGE OPEN SOURCE ------------------------------------------------------->
 				
 				<div id="proposition">
 					
-					<br><br><br><br><br><br><br><br>
+				
 
 					<div class="partie_proposition">
 
@@ -120,12 +124,13 @@
 						</div>
 		
 					</div>
+				</div>
 
 					<br><br>
 
 					<div class="discover_button_green">
 					
-						<a  href="#myBtnContainer">
+						<a  href="#lien_fleche">
 						  	<span class="visually-hidden"></span>
 						  	<svg class="circle" xmlns="http://www.w3.org/2000/svg">
 							  	<g>
@@ -133,43 +138,37 @@
 							     	<ellipse class="arrow_green" class="foreground" ry="40" rx="40" cy="42.5" cx="42.5" stroke-width="2"/>
 							    </g>
 						  	</svg>
-						  	<a href="#myBtnContainer"><img src="img/arrow_down_green.png"></a>
+						  	<div id="lien_fleche"></div>
+						  	<a href="#lien_fleche"><img src="img/arrow_down_green.png"></a>
 						</a>
 					</div>
-				</div>
+					 
+
 		
+
 
 
 
 
 <!-- PARTIE LOGICIELS ----------------------------------------------------------------->
-				
-				<div id="myBtnContainer"></div>
-				
 
-				
-				<hr/>
-					<ul>
-						<li class="box"><p>Logiciels de :</p></li>
-						<a href="#wings"><li class="btn graph" onclick="filterSelection('graph')>Graphisme</li></a>
-						<a href="#phenix"><li class="btn bureau" onclick="filterSelection('bureau')>Bureautique</li></a>
-						<a href="#xampp"><li class="btn outils" onclick="filterSelection('outils')>Outils</li></a>
-						<a href="#jaune"><li class="btn projets" onclick="filterSelection('projets')>Projet</li></a>
-						<a href="#contenu"><li class="btn active" onclick="filterSelection('all')">Tout</li></a>
-					</ul>
+	<hr>
 
-			
-
-		
-		
+	<div id="myBtnContainer">
+		<li class="box"><p>Logiciels de :</p></li>
+		<li><button href="#wings" class="btn graph" onclick="filterSelection('graph')"> Graphisme</button></li>
+		<li><button href="#phenix" class="btn bureau" onclick="filterSelection('bureau')"> Bureautique</button></li>
+		<li><button href="#xampp" class="btn outils" onclick="filterSelection('outils')"> Outils</button></li>
+		<li><button href="#jaune" class="btn projets" onclick="filterSelection('projets')"> Projets</button></li> 
+		<li><button href="#contenu" class="btn active" onclick="filterSelection('all')"> Tout</button></li>
 	</div>
 
 
-</br>
-</br>
-</br>
-</br>
-</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
 
 
 	<div class="container">

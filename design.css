@@ -59,7 +59,7 @@ a{
 
 /* Dispo toute liste */
 li{
-	float: right;
+
 	list-style: none;
 	margin-left: 3vw;
 	color: #ffffff;
@@ -67,7 +67,6 @@ li{
 	font-family: 'Zilla Slab', serif;
 	text-decoration: none;
 	text-transform: uppercase;
-
 }
 
 ul{
@@ -75,6 +74,11 @@ ul{
 	font-family: 'Zilla Slab', serif;
 	margin-top: 2%;
 	display: flex;
+	justify-content: flex-start;
+}
+
+input {
+	display: none;
 }
 
 /* disposition du logo*/
@@ -93,7 +97,6 @@ ul{
 
 .selectpicker{
 	height: 23px;
-	
 	margin-right: 25px;
 }
 
@@ -107,13 +110,25 @@ option{
 
 /* PARTIE ICONES PAGE 1 OPEN SOURCE*/
 
-.first h1{
+.first{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.discover_button {
+	margin-bottom: 100px;
+}
+
+.icones h1{
 	font-family: 'Zilla Slab', serif;
-	font-size: 35px;
-	margin-left: 3vw;
+	font-size: 2em;
 	font-weight: bold;
 	font-stretch: 200%;
-	margin-left: 90px;
+	margin-left: 30px;
+	margin-bottom: 70px;
 }
 
 hr { 
@@ -122,6 +137,10 @@ hr {
 	background: #000000;
 	margin-bottom: 1%;
 	margin-left: 90px;
+}
+
+.icones {
+	margin-left: 120px;
 }
 
 .icones img {
@@ -177,10 +196,13 @@ h2 {
 
 .icones {
 	display: flex;
-	width: 47%;
+	width: 100%;
 	flex-direction: column;
 	float: left;
-	
+}
+
+.icones, .visuel {
+	justify-content: center;
 }
 
 .ensemble_icones_visuel {
@@ -191,21 +213,18 @@ h2 {
 
 #visuel_fille_travail {
 	width: 100%;
-	margin-right: 140px
-
+	padding-right: 0px; 
 }
 
 .visuel {
 	display: flex;
-	margin-right: 30px;
-	margin-bottom: 120px;
-	margin-top: -10px;
+	width: 100%;
 }
 
 /* BOUTON FLECHE  */
 
 .discover_button {
-	margin-top: -70px;
+	margin-top: 70px;
 	display: block;
 	margin-left: 50%;
 	margin-right: 50%;
@@ -264,6 +283,7 @@ a:after {
 .circle {
   	height: 124px;
   	width: 124px;
+  	align-self: center;
 }
   
 .background {
@@ -299,6 +319,7 @@ a:hover:after {
 /* PAGE 2 OPEN SOURCE ----------------------------------------------------------------*/
 
 .partie_proposition {
+	width: 100%;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -306,7 +327,7 @@ a:hover:after {
 }
 
 .proposition {
-	width: 50%;
+	width: 100%;
 	display: flex;
 	justify-content: flex-start;
 	flex-direction: column
@@ -330,11 +351,12 @@ a:hover:after {
 /* BOUTON FLECHE VERTE -------*/
 
 .discover_button_green {
-	margin-top: -140px;
+	margin-top: -70px;
 	display: block;
 	margin-left: 50%;
 	margin-right: 50%;
 	text-align: center;
+	margin-bottom: 100px;
 }
 
 .discover_button_green img {
@@ -378,8 +400,8 @@ a:hover .arrow_green {
 
 /* FIN DE LA PAGE 2 ------------------------------------------------------------*/
 
-#myBtnContainer hr {
-	margin-top: 7%;;
+hr {
+	margin: 0;;
 	width: 90%;
 	height: 5px;
 	background: #000000;
@@ -388,15 +410,15 @@ a:hover .arrow_green {
 
 .box{
 	border-radius: 10px 0px 0px 10px;
-	padding-top: 1.5vh;
+	padding-top: 1.4vh;
 	padding-bottom: 1.5vh;
 	padding-left: 1vw;
 	padding-right: 1vw;
 	background-color: black;
 	color: white;
-	margin-top: -35px;
 	margin-right: 2px;
-	margin-left: 8%
+	margin-left: 5%;
+	margin-top: -5px;
 }
 
 .box p{
@@ -407,16 +429,25 @@ a:hover .arrow_green {
 	font-size: 15px;
 }
 
-#myBtnContainer a  {
+#myBtnContainer {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+button {
 	align-items: center;
 	color: #000000;
-	margin-top: -10px;
-
+	margin-top: 10px;
+	font-size: 1em;
+	overflow: hidden;
 }
 
 li {
 	font-family:'Zilla Slab', serif;
 	color: #000000;
+
 }
 
 
@@ -537,7 +568,11 @@ label strong {
 	border-bottom-left-radius: 0;
 	color: white;
 	margin-bottom: 0;
-	
+}
+
+.btn {
+	color: black;
+
 }
 
 
@@ -1028,7 +1063,7 @@ footer img {
 
 /* ------------------------------- RESPONSIVE ---------------------------------------------*/
 
-@media (max-width: 640px){
+@media (max-width: 800px){
 
 /* HEADER */
 
@@ -1066,21 +1101,12 @@ footer img {
         float: left;
         background-color: white;
         width: 100%;
-        display: block;
-        
+        display: none;
     }
 
-    nav:checked {
-        float: left;
-        background-color: black;
-        width: 100%;
-        display: block;
-        
-    }
 
     nav ul li a{
     	color: black;
-
     }
 
     #switch:checked {
@@ -1110,49 +1136,81 @@ footer img {
 
     /* PARTIE 1 : OPEN SOURCE */
 
-	h1{
+	.icones h1{
+
 		margin-left: 30px;
-		font-size: 1.5em;
+		font-size: 2em;
 	}
 
 	.first {
 		display: flex;
 		width: 100%;
 		flex-direction: column-reverse;
-		margin: 0;
+		margin-top: 0;
 		align-items: center;
-		order: 1-1;
 	}
 
-	.icone {
-		margin-right: 0;
+	.icones {
+		width: 100%;
+		float: left;
 		display: flex;
 		flex-direction: column;
 	}
 
 	.redistribution img, .gratuit img, .code img, .grand_public img {
-		width: 50%;
+		width: 20%;
 		align-items: center;
+		margin-left: 20px;
 	} 
 
 	.redistribution h2, .gratuit h2, .code h2, .grand_public h2 {
 		width: 100%;
 		vertical-align: center;
+		font-size: 1em;
 	} 
 
 	.redistribution, .gratuit, .code, .grand_public {
 		align-items: center;
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 	}
 
-	.visuel {
-		width: 70%;
-		margin: 0;
+	.visuel{
+		width:100%;
+	}
+
+	#visuel_fille_travail {
+		width: 100%;
+	}
+
+	.discover_button {
 		margin-top: 0px;
-		margin-bottom: 50px;
-
+		display: block;
+		margin-left: 50%;
+		margin-right: 50%;
+		text-align: center;
 	}
+
+	.discover_button img {
+		width: 50px;
+		height: 0 auto;
+		display: block;
+		flex-direction: column;
+		position: absolute;
+		margin-left: 20px;
+		margin-top: -103px;
+	} 
+
+	.discover_button img:hover {
+		display: none;
+	}
+
+	.circle {
+		display: flex;
+		align-self: center;
+	}
+
+
 
 	/* FIN DE LA PARTIE 1 : OPEN SOURCE */
 
@@ -1160,14 +1218,62 @@ footer img {
 	/* PARTIE 2 : OPEN SOURCE */
 
 	.partie_proposition {
-		width: 100%;
 		flex-direction: column-reverse;
+	}
+
+	.proposition {
+		align-self: center;
+	}
+
+	.proposition p, .proposition h1 {
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+
+	#visuel_proposition {
+		margin-left: 0px;
+		align-self: center;
+
+	}
+
+	.proposition, {
+		width: 100%;
+		flex-direction: column;
 		margin: 0;
+	}
+
+	.discover_button_green {
+		margin-top: 0px;
+		display: block;
+		margin-left: 50%;
+		margin-right: 50%;
+		align-self: center;
+	}
+
+	.discover_button_green img {
+		width: 50px;
+		height: 0 auto;
+		display: block;
+		flex-direction: column;
+		position: absolute;
+		margin-left: 20px;
+		margin-top: -110px;
+	}
+
+	.discover_button_green img:hover {
+		display: none;
 	}
 
 	/* FIN DE LA PARTIE 2 : OPEN SOURCE */
 
 
+	/* PARTIE LOGICIELS */
+
+	ul li {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+	}
 }
 
 
