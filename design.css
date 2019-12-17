@@ -31,7 +31,7 @@ header{
 	background-color: #000000;
 	position: fixed;
 	display: flex;
-    justify-content: space-between;
+ 
     align-items: center;
     z-index: 1;
 }
@@ -77,22 +77,38 @@ ul{
 	justify-content: flex-start;
 }
 
-input {
+
+input{
 	display: none;
 }
 
 /* disposition du logo*/
 
 #logo{
-	margin-right: 3vw;
+	margin-right: 0px;
 	height: 45px;
 }
 
 /* choix du langage */
 
+header {
+	justify-content: space-between;
+	padding: 0;
+}
+
+nav, .sous-header {
+	display: flex;
+	justify-content: space-between;
+}
+
 .sous-header {
 	display: flex;
 	align-items: center;
+	flex-direction: row;
+}
+
+header .sous-header {
+	display: flex;
 }
 
 .selectpicker{
@@ -756,8 +772,9 @@ label strong {
     overflow: visible;
   	position: relative;
   	z-index: 0;
-  	padding-left:15%;
-  	padding-right:15%;
+  	margin-left: auto;
+  	margin-right: auto;
+
 }
 
 .carousel-item {
@@ -964,11 +981,13 @@ label {
 
 }
 
-input,label {
-    margin: .4rem 0;
+.email label {
+	font-size: 1.1em;
+	margin-bottom: 10px;
 }
 
-input {
+.email input {
+	display: block;
 	width: 450px;
 	height: 30px;
 }
@@ -1033,6 +1052,13 @@ footer img {
 	color: white;
 }
 
+.reseaux_mozilla {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-right: 90px;
+}
+
 #return_top img {
 	display: flex;
 	margin-bottom: 15px;
@@ -1044,7 +1070,6 @@ footer img {
 	width: 40px;
 	height: 30px;
 	margin-top: 13px;
-	margin-right: 90px;
 }
 .github{
 	width: 33px;
@@ -1151,10 +1176,11 @@ footer img {
 	}
 
 	.icones {
-		width: 100%;
+		width: 80%;
 		float: left;
 		display: flex;
 		flex-direction: column;
+		margin-left: 0;
 	}
 
 	.redistribution img, .gratuit img, .code img, .grand_public img {
@@ -1269,11 +1295,78 @@ footer img {
 
 	/* PARTIE LOGICIELS */
 
-	ul li {
+	hr {
+		display: none;
+	}
+
+	.box {
+		width: 20%;
+		margin-left: 30px;
+		padding: 5px;
+	}
+
+	button {
+		margin-top: 0px;
+		border-style: none;
+		border-width: 0px; 
+	}
+
+	.btn {
+		margin-left: 20px;
+	}
+
+	li {
 		display: flex;
 		flex-direction: row;
 		justify-content: flex-start;
+		border-bottom: 0px solid white;
 	}
+
+	.container label {
+		display: flex;
+		justify-content: center;
+		width: 70%;
+		margin-left: 100px;
+	}
+
+	.carousel {
+		width: 80%;
+		padding: 0;
+		display: flex;
+		margin-top: 30px;
+	}
+
+	.carousel-item {
+		width: 100%;
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.carousel-item__info, .carousel-item__image {
+		width: 100%;
+	}
+
+	/* NEWSLETTER */
+
+	.newsletter_droite button {
+		margin-top: 30px;
+	}
+
+	.newsletter_gauche {
+		width: 100%;
+		word-break: keep-all;
+	}
+
+	/* FOOTER */
+
+	.reseaux_mozilla{
+		margin-right: 20px;
+		margin-bottom: 35px;
+	}
+
+	#return_top img {
+	margin-bottom: 0px;
+}
 }
 
 
