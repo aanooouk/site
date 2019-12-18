@@ -1,49 +1,1547 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
-	<title>Fondation Mozilla</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=Zilla+Slab&display=swap" rel="stylesheet">
+<title>Fondation Mozilla</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="mozilla fondation, logiciels de bureautique, logiciels de graphisme, logiciels d'outils de gestion, logiciels de projet,open source, logiciel gratuit">
+<meta name="description" content="Nous vous permettons de trouver facilement des alternatives gratuites de logiciels en open source" />
+<link rel="stylesheet" type="text/css" href="design.css">
+<link href="https://fonts.googleapis.com/css?family=Zilla+Slab&display=swap" rel="stylesheet">
 </head>
 <body>
 
-	<!-- MENU -->
+<!-- Menu -->
+	<header>
+
+	<nav>
+		 <ul>
+				<li><a href="#myBtnContainer">LOGICIELS OPEN SOURCE</a></li>
+				<li><a href="#top">TOP PROJETS</a></li>
+				<li><a href="#newsletter">NEWSLETTER</a></li>
+			</ul>
+		</nav>
+	
+		<!-- choix language -->
+		<div class="sous-header">
+			<select class="selectpicker" data-width="fit">
+			    <option>&#x1F1EB;&#x1F1F7; Français</option>
+			    <option>&#x1F1EC;&#x1F1E7; English</option>
+			  	<option>&#x1F1EA;&#x1F1F8; Español</option>
+			</select>
+
+			<img id="logo" src="img/logo.jpeg" alt="logo">
+		</div>
+
+	<!--Fin du header-->
+	</header>
+
+	<!-- Première page opensource -->
+
+	<div class="first" id="return_top">
+	
+	</br></br></br></br></br></br>
+
+		<h1> Qu'est ce que l'open source ?</h1>
+		
+	</br></br>
+
+			
+			<div class="icones">
+
+				<div class="redistribution">
+					<img src="img/icone_redistribution.png">
+					<h2>Des possibilité de <strong>redistribution</strong></h2>
+				</div>
+
+				</br>
+
+				<div class="gratuit">
+					<img src="img/icone_gratuit.png">
+					<h2>De la <strong>gratuité</strong></h2>
+				</div>
+
+				</br>
+
+				<div class="code">
+					<img src="img/icone_code.png">
+					<h2>Un accès au <strong>code source</strong> du logiciel</h2>
+				</div>
+
+				</br>
+
+				<div class="grand_public">
+					<img src="img/icone_public.png">
+					<h2>Une <strong>mise à disposition</strong> au grand public</h2>
+				</div>
+			
+			</div>
+
+				<div class="visuel">
+					<img id="visuel_fille_travail" src="img/visuel_fille_travail.png">
+				</div>
+		
+			</div>
+
+				<div class="discover_button">
+					<a href="#proposition">
+					  <span class="visually-hidden"></span>
+					  <svg class="circle" xmlns="http://www.w3.org/2000/svg">
+					    <g>
+					     <ellipse class="background" ry="40" rx="40" cy="42.5" cx="42.5" stroke-width="1"/>
+					     <ellipse class="foreground" ry="40" rx="40" cy="42.5" cx="42.5" stroke-width="2"/>
+					    </g>
+					  </svg>
+					  <a href="#proposition"><img src="img/arrow_down.png"></a>
+					</a>
+				</div>
+
+<!-- DEUXIEME PAGE OPEN SOURCE ------------------------------------------------------->
+				
+				<div id="proposition">
+					
+
+					<div class="partie_proposition">
+
+						<div class="proposition">
+							<h1>Ce qu'on vous propose</h1>
+							<br><br><br><br>
+							<p>Avec de nombreux <strong>logiciels</strong> pouvant correspondre à vos attentes, nous avons sélectionné pour vous le meilleur de <strong>l’open source </strong> !
+								<br><br><br>
+							Vous recherchez des logiciels de graphisme ? De gestion de projet ? De bureautique ? De développement ? Vous êtes au bon endroit ! </p>
+						</div>
+
+						<div class="visuel">
+							<img id="visuel_proposition" src="img/visuel_proposition.png">
+						</div>
+		
+					</div>
+
+					<br><br>
+
+					<div class="discover_button_green">
+					
+						<a  href="#logiciels">
+						  	<span class="visually-hidden"></span>
+						  	<svg class="circle" xmlns="http://www.w3.org/2000/svg">
+							  	<g>
+							     	<ellipse class="background" ry="40" rx="40" cy="42.5" cx="42.5" stroke-width="1"/>
+							     	<ellipse class="arrow_green" class="foreground" ry="40" rx="40" cy="42.5" cx="42.5" stroke-width="2"/>
+							    </g>
+						  	</svg>
+						  	<a href="#myBtnContainer"><img src="img/arrow_down_green.png"></a>
+						</a>
+					</div>
+				</div>
+
+	
 
 
-	<!-- HEADER -->
+			<!-- Control buttons -->
+			<div id="myBtnContainer">
+			<hr/>
+			<ul>
+				<li class="box" ><p> Logiciels de:</p></li>
+				<li class="btn all" onclick="filterSelection('all')"> Tout </li>
+				<li class="btn graph" onclick="filterSelection('graph')"> Graphisme </li>
+				<li class="btn bureau"  onclick="filterSelection('bureau')"> Bureautique </li>
+				<li class="btn outils" onclick="filterSelection('outils')"> outils</li>
+				<li class="btn projets"  onclick="filterSelection('projets')"> Projets </li>
+			</ul>
+			</div>
+
+			
+			<!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+			<div class="container">
+				<div class="filterDiv graph">
+						<input type="checkbox" id="check-1" />
+						<label for="check-1"><strong>Wings 3D</strong>
+							<img src="img/linux.png">
+							<img src="img/windows.png">
+							<img src="img/mac.png">
+							<img src="img/arrow.png">
+						</label>
+							<div class="star-holder">
+									<i class="star red-rated"></i>
+									<i class="star red-rated"></i>
+									<i class="star red-rated"></i>
+									<i class="star red-rated"></i>
+									<i class="star red-partial"></i>
+							</div>
+							<h3>3O avis</h3>
+						<img src="img/GRAPHISME/wings3d.png">
+							<h1>
+								Logiciel de modélisation 3D, Wings3D est plus accessible aux néophytes que Blender mais n’offre pas d’animations ni autant de fonctionnalités.
+								Réputé pour sa simplicité d’utilisation, il permet d’exporter ses documents dans de nombreux formats.
+								De nombreux tutoriels sont disponibles pour vous aider à prendre en main son interface rapidement.
+							</h1>
+						<article>
+							<p>
+								&bull;	Système de calques similaire à Autocad</br>
+								&bull;	Export en format vectoriel et bitmap</br>
+								&bull;	Système d’accroche</br>
+								&bull;Possibilité de création de formes complexes et de chanfreins</br>
+							</p>
+							<img src="img/GRAPHISME/screen-wings3D.png">
+							<hr class="hred"/>
+							<div class="review-container">
+										<div class="review">
+											<div class="star-holder">
+												<i class="star red-rated"></i>
+												<i class="star red-rated"></i>
+												<i class="star red-rated"></i>
+												<i class="star red-rated"></i>
+												<i class="star red-partial"></i>
+										 	 </div> 
+										 <div class="review-title">
+										  </div> 
+										  <div class="review-text">
+											<p class="review-text">
+											Le logiciel est super et surtout gratuit!</p>
+										  </div>
+										  <div class="review-reviewer">
+											<div class="reviewer">Kelly McNamara</div>
+										  </div>
+										</div>
+										
+										 <div class="review">
+											<div class="star-holder">
+												<i class="star red-rated"></i>
+												<i class="star red-rated"></i>
+												<i class="star red-rated"></i>
+												<i class="star red-rated"></i>
+												<i class="star red-partial"></i>
+										  </div> 
+										 <div class="review-title">
+										  </div>  
+										  <div class="review-text">
+											<p>
+											Parfait! tout ce qu'il me manquait se trouve dans ce logiciel open source. Et c'est gratuit, vraiment rien à dire.</p>
+										  </div>
+										  <div class="review-reviewer">
+											<div class="reviewer">Aisling McCool</div>
+										  </div>
+										</div>
+						</article>
+				</div>
 
 
-	<!-- TOP PROJETS -->
+				<div class="filterDiv graph">
+						<input type="checkbox" id="check-2"/>
+						<label for="check-2"><strong>Krita</strong>
+							<img src="img/linux.png">
+							<img src="img/windows.png">
+							<img src="img/mac.png">
+							<img src="img/arrow.png">
+						</label>
+						<div class="star-holder">
+								<i class="star red-rated"></i>
+								<i class="star red-rated"></i>
+								<i class="star red-rated"></i>
+								<i class="star red-rated"></i>
+								<i class="star red-partial"></i>
+						</div>
+						<h3>12 avis</h3>
+						<img src="img/GRAPHISME/krita.png">
+						<h1> Logiciel professionnel de peinture numérique. Il est conçu par des artistes qui veulent des outils abordables pour 
+								tout le monde et il est adapté à la création de : concept art, texture et matte painting,
+								illustrations, story board et bandes dessinées.
+						</h1>
+						<article>
+							<p> 
+								&bull;Palette complète d’outils (dessin, transformation, sélection)</br>
+								&bull;Gestion des Calques</br>
+								&bull;Stabilisateur de Brosses</br>
+								&bull;Gestion Complète des Couleurs</br>
+								&bull;Interface Utilisateur personnalisable</br>
+								&bull;Support des Fichiers PSD</br>
+							</p>
+							<img src="img/GRAPHISME/screen-krita.png">
+							<hr class="hred"/>
+							<div class="review-container">
+										<div class="review">
+											<div class="star-holder">
+												<i class="star red-rated"></i>
+												<i class="star red-rated"></i>
+												<i class="star red-rated"></i>
+												<i class="star red-rated"></i>
+												<i class="star red-partial"></i>
+										 	 </div> 
+										 <div class="review-title">
+										  </div> 
+										  <div class="review-text">
+											<p class="review-text">
+											Le logiciel est super et surtout gratuit!</p>
+										  </div>
+										  <div class="review-reviewer">
+											<div class="reviewer">Kelly McNamara</div>
+										  </div>
+										</div>
+										
+										 <div class="review">
+											<div class="star-holder">
+												<i class="star red-rated"></i>
+												<i class="star red-rated"></i>
+												<i class="star red-rated"></i>
+												<i class="star red-rated"></i>
+												<i class="star red-partial"></i>
+										  </div> 
+										 <div class="review-title">
+										  </div>  
+										  <div class="review-text">
+											<p>
+											Parfait! tout ce qu'il me manquait se trouve dans ce logiciel open source. Et c'est gratuit, vraiment rien à dire.</p>
+										  </div>
+										  <div class="review-reviewer">
+											<div class="reviewer">Aisling McCool</div>
+										  </div>
+										</div>
+						</article>
+					</div>
 
-	<!-- PARTIE 1 -->
-	<div class="Partie-1">
-		<p>Lorem Ipsum</p>
+				<div class="filterDiv graph">
+						<input type="checkbox" id="check-3" />
+						<label for="check-3"><strong>Blender</strong>
+							<img src="img/linux.png">
+							<img src="img/windows.png">
+							<img src="img/mac.png">
+							<img src="img/arrow.png">
+						</label>
+						<div class="star-holder">
+								<i class="star red-rated"></i>
+								<i class="star red-rated"></i>
+								<i class="star red-rated"></i>
+								<i class="star red-rated"></i>
+								<i class="star red-partial"></i>
+						</div>
+						<h3>21 avis</h3>
+						<img src="img/GRAPHISME/BLENDER.png">
+						<h1>logiciel de modélisation, d’animation et de rendu 3D.Véritable référence dans son domaine, il est utilisé par de nombreux studios 
+								professionnels et rivalise avec ses concurrents propriétaires
+								grâce à sa multitude de fonctionnalités, lui permettant d’assurer des tâches allant
+								jusqu’au montage vidéo.</h1>
+						<article>
+							<p>
+								&bull;Gestion de plusieurs techniques de modélisation </br>
+								&bull;Très nombreux moteurs de rendus et de formats d’exportation</br>
+								&bull;Gestion avancée d’animations</br>
+								&bull;Composition vidéo</br>
+								&bull;Traitement des éclairages</br>
+								&bull;Langage de script Python</br>
+								&bull;Moteur 3D temps réel</br>
+								&bull;Simulation de fluides réalistes</br>
+								&bull;Simulateur de fumée</br>
+							</p>
+							<img src="img/GRAPHISME/screen-blender.jpg">
+							<hr class="hred"/>
+							<div class="review-container">
+										<div class="review">
+											<div class="star-holder">
+												<i class="star red-rated"></i>
+												<i class="star red-rated"></i>
+												<i class="star red-rated"></i>
+												<i class="star red-rated"></i>
+												<i class="star red-partial"></i>
+										 	 </div> 
+										 <div class="review-title">
+										  </div> 
+										  <div class="review-text">
+											<p class="review-text">
+											Le logiciel est super et surtout gratuit!</p>
+										  </div>
+										  <div class="review-reviewer">
+											<div class="reviewer">Kelly McNamara</div>
+										  </div>
+										</div>
+										
+										 <div class="review">
+											<div class="star-holder">
+												<i class="star red-rated"></i>
+												<i class="star red-rated"></i>
+												<i class="star red-rated"></i>
+												<i class="star red-rated"></i>
+												<i class="star red-partial"></i>
+										  </div> 
+										 <div class="review-title">
+										  </div>  
+										  <div class="review-text">
+											<p>
+											Parfait! tout ce qu'il me manquait se trouve dans ce logiciel open source. Et c'est gratuit, vraiment rien à dire.</p>
+										  </div>
+										  <div class="review-reviewer">
+											<div class="reviewer">Aisling McCool</div>
+										  </div>
+										</div>			
+						</article>	
+				</div>
+				<div class="filterDiv graph">
+						<input type="checkbox" id="check-4" />
+						<label for="check-4"><strong>Inkscape</strong>
+							<img src="img/linux.png">
+							<img src="img/windows.png">
+							<img src="img/mac.png">
+							<img src="img/arrow.png">
+						</label>
+						<div class="star-holder">
+								<i class="star red-rated"></i>
+								<i class="star red-rated"></i>
+								<i class="star red-rated"></i>
+								<i class="star red-rated"></i>
+								<i class="star red-partial"></i>
+						</div>
+						<h3>7 avis</h3>
+						<img src="img/GRAPHISME/INKSCAPE.png">
+						<h1>INKSCAPE est la référence
+								pour les dessins
+								vectoriels en format SVG, c’est-
+								à-dire d’images ou de textes
+								pouvant être redimensionnés à
+								n’importe quelle taille tout en
+								restant exactement conformes
+								aux originaux en qualité et
+								netteté. </h1>
+						<article>
+							<p> 
+									&bull;Création et manipulation d’objets</br>
+									&bull;Nombreuses opérations applicables sur les chemins</br>
+									&bull;Export au format PNG, PDF et dans de nombreux formats vectoriels</br>
+									&bull;Multilingue</br>
+							</p>
+							<img src="img/GRAPHISME/screen-inkscape.png">
+							<hr class="hred"/>
+							<div class="review-container">
+										<div class="review">
+											<div class="star-holder">
+												<i class="star red-rated"></i>
+												<i class="star red-rated"></i>
+												<i class="star red-rated"></i>
+												<i class="star red-rated"></i>
+												<i class="star red-partial"></i>
+										 	 </div> 
+										 <div class="review-title">
+										  </div> 
+										  <div class="review-text">
+											<p class="review-text">
+											Le logiciel est super et surtout gratuit!</p>
+										  </div>
+										  <div class="review-reviewer">
+											<div class="reviewer">Kelly McNamara</div>
+										  </div>
+										</div>
+										
+										 <div class="review">
+											<div class="star-holder">
+												<i class="star red-rated"></i>
+												<i class="star red-rated"></i>
+												<i class="star red-rated"></i>
+												<i class="star red-rated"></i>
+												<i class="star red-partial"></i>
+										  </div> 
+										 <div class="review-title">
+										  </div>  
+										  <div class="review-text">
+											<p>
+											Parfait! tout ce qu'il me manquait se trouve dans ce logiciel open source. Et c'est gratuit, vraiment rien à dire.</p>
+										  </div>
+										  <div class="review-reviewer">
+											<div class="reviewer">Aisling McCool</div>
+										  </div>
+										</div>
+						</article>
+				</div>
+				<div class="filterDiv outils">
+						<input type="checkbox" id="check-5" />
+						<label for="check-5"><strong>Xampp</strong>
+							<img src="img/linux.png">
+							<img src="img/windows.png">
+							<img src="img/mac.png">
+							<img src="img/arrow.png">
+						</label>
+						<div class="star-holder">
+								<i class="star violet-rated"></i>
+								<i class="star violet-rated"></i>
+								<i class="star violet-rated"></i>
+								<i class="star violet-rated"></i>
+								<i class="star violet-partial"></i>
+						</div>
+						<h3>23 avis</h3>
+						<img src="img/OUTIL/XAMPP.png">
+						<h1>XAMPP est un ensemble de logiciels qui permet de mettre en place facilement un serveur Web confidentiel,
+								un serveur FTP et un serveur de messagerie électronique. Simple d’utilisation, il est à la porté d’un grand
+								nombre de personnes puisqu’il ne demande aucune connaissance particulière.
+						</h1>
+						<article>
+							<p>
+								Xampp contient principalement les utilitaires suivant :</br>
+								&bull;Le logiciel serveur Apache</br>
+								&bull;MariaDB (fork de MYSQL) pour la gestion des bases de données</br>
+								&bull;PHP et PERL pour gérer les scripts et les contenus dynamiques</br>
+							</p>
+							<img src="img/OUTIL/screen-xamp.png">
+							<hr class="hviolet"/>
+							<div class="review-container">
+										<div class="review">
+											<div class="star-holder">
+												<i class="star violet-rated"></i>
+												<i class="star violet-rated"></i>
+												<i class="star violet-rated"></i>
+												<i class="star violet-rated"></i>
+												<i class="star violet-partial"></i>
+										 	 </div> 
+										 <div class="review-title">
+										  </div> 
+										  <div class="review-text">
+											<p class="review-text">
+											Le logiciel est super et surtout gratuit!</p>
+										  </div>
+										  <div class="review-reviewer">
+											<div class="reviewer">Kelly McNamara</div>
+										  </div>
+										</div>
+										
+										 <div class="review">
+											<div class="star-holder">
+												<i class="star violet-rated"></i>
+												<i class="star violet-rated"></i>
+												<i class="star violet-rated"></i>
+												<i class="star violet-rated"></i>
+												<i class="star violet-partial"></i>
+										  </div> 
+										 <div class="review-title">
+										  </div>  
+										  <div class="review-text">
+											<p>
+											Parfait! tout ce qu'il me manquait se trouve dans ce logiciel open source. Et c'est gratuit, vraiment rien à dire.</p>
+										  </div>
+										  <div class="review-reviewer">
+											<div class="reviewer">Aisling McCool</div>
+										  </div>
+										</div>
+						</article>
+				</div>
+
+				<div class="filterDiv outils">
+						<input type="checkbox" id="check-6" />
+						<label for="check-6"><strong>BoostNote</strong>
+							<img src="img/linux.png">
+							<img src="img/windows.png">
+							<img src="img/mac.png">
+							<img src="img/arrow.png">
+						</label>
+						<div class="star-holder">
+								<i class="star violet-rated"></i>
+								<i class="star violet-rated"></i>
+								<i class="star violet-rated"></i>
+								<i class="star violet-rated"></i>
+								<i class="star violet-partial"></i>
+						</div>
+						<h3>17 avis</h3>
+						<img src="img/OUTIL/BOOSTNOTE.png">
+						<h1>Boostnote est un éditeur de texte fonctionnel et efficace qui vous permet de rédiger du contenu au format texte, mais également de coder vos programmes en plusieurs langage
+						   Équipé d’une interface clairement structuré, Boostnote vous permet de créer autant de documents que vous le souhaitez, et de les organiser dans des répertoires préalablement créés pour mieux vous y retrouver
+						</h1>
+						<article>
+							<p>
+									&bull;Les notes peuvent être prises au format Markdown ou au format extrait de code</br>
+									&bull;Surbrillance de la syntaxe</br>
+									&bull;Les notes peuvent être étiquetées</br>
+									&bull;Fonctionnalité de recherche</br>
+									&bull;Les notes peuvent être regroupées dans des dossiers</br>
+									&bull;Hotkey support</br>
+									&bull;Thèmes d'interface utilisateur sombres et clairs</br>
+									&bull;Beaucoup de thèmes pour l'éditeur</br>
+									&bull;Multiplateforme, disponible pour Linux, Windows, macOS, Android et iOS</br>
+									&bull;Pas de synchronisation vers le cloud</br>
+									&bull;Les notes peuvent être exportées au format .txt ou .md (Markdown).</br>
+							</p>
+							<img src="img/OUTIL/screen-boostnote.png">
+							<hr class="hviolet"/>
+							<div class="review-container">
+										<div class="review">
+											<div class="star-holder">
+												<i class="star violet-rated"></i>
+												<i class="star violet-rated"></i>
+												<i class="star violet-rated"></i>
+												<i class="star violet-rated"></i>
+												<i class="star violet-partial"></i>
+										 	 </div> 
+										 <div class="review-title">
+										  </div> 
+										  <div class="review-text">
+											<p class="review-text">
+											Le logiciel est super et surtout gratuit!</p>
+										  </div>
+										  <div class="review-reviewer">
+											<div class="reviewer">Kelly McNamara</div>
+										  </div>
+										</div>
+										
+										 <div class="review">
+											<div class="star-holder">
+												<i class="star violet-rated"></i>
+												<i class="star violet-rated"></i>
+												<i class="star violet-rated"></i>
+												<i class="star violet-rated"></i>
+												<i class="star violet-partial"></i>
+										  </div> 
+										 <div class="review-title">
+										  </div>  
+										  <div class="review-text">
+											<p>
+											Parfait! tout ce qu'il me manquait se trouve dans ce logiciel open source. Et c'est gratuit, vraiment rien à dire.</p>
+										  </div>
+										  <div class="review-reviewer">
+											<div class="reviewer">Aisling McCool</div>
+										  </div>
+										</div>
+						</article>
+				</div>
+
+				<div class="filterDiv outils">
+						<input type="checkbox" id="check-7" />
+						<label for="check-7"><strong>Notepad ++</strong>
+							<img src="img/linux.png">
+							<img src="img/windows.png">
+							<img src="img/mac.png">
+							<img src="img/arrow.png">
+						</label>
+						<div class="star-holder">
+								<i class="star violet-rated"></i>
+								<i class="star violet-rated"></i>
+								<i class="star violet-rated"></i>
+								<i class="star violet-rated"></i>
+								<i class="star violet-partial"></i>
+						</div>
+						<h3>31 avis</h3>
+						<img src="img/OUTIL/Notepadpp++.png">
+						<h1>Notepad++ est un éditeur de textes simple, qui peut-être une alternative à l’outil de Microsoft Notepad.
+							Il permet de créer des textes simples, mais dispose de fonctions telles que la « coloration syntaxique » utile aux développeurs.
+						</h1>
+						<article>
+							<p>
+									&bull;Coloration Syntaxique et Relief Syntaxique (Syntax Folding)</br>
+									&bull;Langage défini par utilisateur</br>
+									&bull;PCRE (Perl Compatible Regular Expression) pour la recherche et le remplacement</br>
+									&bull;Document Map</br>
+									&bull;Auto-complétion</br>
+									&bull;Multi-documents (les onglets)</br>
+									&bull;WYSIWYG (What You See Is What You Get - pour l’impression)</br>
+									&bull;Zoom in et zoom out</br>
+									&bull;Multilingue</br>
+									&bull;Signet</br>
+									&bull;Macro recording and playback</br>
+							</p>
+							<img src="img/OUTIL/screen-notepad.png">
+							<hr class="hviolet"/>
+							<div class="review-container">
+										<div class="review">
+											<div class="star-holder">
+												<i class="star violet-rated"></i>
+												<i class="star violet-rated"></i>
+												<i class="star violet-rated"></i>
+												<i class="star violet-rated"></i>
+												<i class="star violet-partial"></i>
+										 	 </div> 
+										 <div class="review-title">
+										  </div> 
+										  <div class="review-text">
+											<p class="review-text">
+											Le logiciel est super et surtout gratuit!</p>
+										  </div>
+										  <div class="review-reviewer">
+											<div class="reviewer">Kelly McNamara</div>
+										  </div>
+										</div>
+										
+										 <div class="review">
+											<div class="star-holder">
+												<i class="star violet-rated"></i>
+												<i class="star violet-rated"></i>
+												<i class="star violet-rated"></i>
+												<i class="star violet-rated"></i>
+												<i class="star violet-partial"></i>
+										  </div> 
+										 <div class="review-title">
+										  </div>  
+										  <div class="review-text">
+											<p>
+											Parfait! tout ce qu'il me manquait se trouve dans ce logiciel open source. Et c'est gratuit, vraiment rien à dire.</p>
+										  </div>
+										  <div class="review-reviewer">
+											<div class="reviewer">Aisling McCool</div>
+										  </div>
+										</div>
+						</article>	
+				</div>
+
+				<div class="filterDiv outils">
+				<input type="checkbox" id="check-8" />
+					<label for="check-8"><strong>WampServer</strong>
+						<img src="img/linux.png">
+						<img src="img/windows.png">
+						<img src="img/mac.png">
+						<img src="img/arrow.png">
+					</label>
+					<div class="star-holder">
+							<i class="star violet-rated"></i>
+							<i class="star violet-rated"></i>
+							<i class="star violet-rated"></i>
+							<i class="star violet-rated"></i>
+							<i class="star violet-partial"></i>
+					</div>
+					<h3>11 avis</h3>
+					<img src="img/OUTIL/WAMP.png">
+					<h1>WAMP rassemble les principaux logiciels pour mettre en place un serveur personnel ou professionnel sur un ordinateur.
+							Il est souvent utilisé pour le développement mais permet également de créer facilement un réseau pour héberger le site
+							web de son entreprise ou des logiciels professionnels de gestion d’entreprise ou de relation clients tels que ceux présents sur ce Pack.
+					</h1>
+					<article>
+						<p>
+							Wamp contient principalement : </br>
+							&bull;Le logiciel serveur Apache</br>
+							&bull;MySQL pour la gestion des bases de données</br>
+							&bull;PHP pour gérer les scripts et les contenus dynamiques</br>
+						</p>
+						<img src="img/OUTIL/screen-wamp.jpg">
+						<hr class="hviolet"/>
+							<div class="review-container">
+										<div class="review">
+											<div class="star-holder">
+												<i class="star violet-rated"></i>
+												<i class="star violet-rated"></i>
+												<i class="star violet-rated"></i>
+												<i class="star violet-rated"></i>
+												<i class="star violet-partial"></i>
+										 	 </div> 
+										 <div class="review-title">
+										  </div> 
+										  <div class="review-text">
+											<p class="review-text">
+											Le logiciel est super et surtout gratuit!</p>
+										  </div>
+										  <div class="review-reviewer">
+											<div class="reviewer">Kelly McNamara</div>
+										  </div>
+										</div>
+										
+										 <div class="review">
+											<div class="star-holder">
+												<i class="star violet-rated"></i>
+												<i class="star violet-rated"></i>
+												<i class="star violet-rated"></i>
+												<i class="star violet-rated"></i>
+												<i class="star violet-partial"></i>
+										  </div> 
+										 <div class="review-title">
+										  </div>  
+										  <div class="review-text">
+											<p>
+											Parfait! tout ce qu'il me manquait se trouve dans ce logiciel open source. Et c'est gratuit, vraiment rien à dire.</p>
+										  </div>
+										  <div class="review-reviewer">
+											<div class="reviewer">Aisling McCool</div>
+										  </div>
+										</div>
+					</article>				
+				</div>
+
+				<div class="filterDiv bureau">
+				<input type="checkbox" id="check-9" />
+					<label for="check-9"><strong>Open office</strong>
+						<img src="img/linux.png">
+						<img src="img/windows.png">
+						<img src="img/mac.png">
+						<img src="img/arrow.png">
+					</label>
+					<div class="star-holder">
+							<i class="star green-rated"></i>
+							<i class="star green-rated"></i>
+							<i class="star green-rated"></i>
+							<i class="star green-rated"></i>
+							<i class="star green-partial"></i>
+					</div>
+					<h3>3 avis</h3>
+					<img src="img/BUREAUTIQUE/OpenOffice.png">
+					<h1>OpenOffice est une
+							alternative libre et
+							gratuite. Cette suite
+							bureautique de
+							qualité
+							professionnelle
+							comporte tous les
+							outils nécessaires à la
+							plupart des
+							utilisateurs :
+							traitement de texte,
+							tableur, présentation
+							et base de données.
+							Lorsque cela est
+							nécessaire, il est
+							possible d’enregistrer
+							vos documents dans
+							un format Microsoft
+							Office lisibles par vos
+							collaborateurs.
+					</h1>	
+					<article>
+						<p>
+							La suite OpenOffice.org comprend :</br>
+							&bull;Writer : Traitement de texte, alternative libre à Microsoft Word permettant de mettre en forme les documents textuels</br>
+							&bull;Calc : Tableur similaire à Microsoft Excel, il permet le traitement de certaines de ses actions automatisées, la génération de graphique et l’accès à des utilisateurs multiples</br>
+							&bull;Impress : Permet de composer des présentations sous forme de diapositives à l’instar de Microsoft Powerpoint</br>
+							&bull;Base : Gestionnaire de bases de données</br>
+							&bull;Draw : Outil de dessin vectoriel pour les illustrations et les schémas simples</br>
+							&bull;Math : Outil de composition de formules mathématiques</br>
+						</p>	
+						<img src="img/BUREAUTIQUE/screen-openoffice.png">	
+						<hr class="hgreen"/>
+							<div class="review-container">
+										<div class="review">
+											<div class="star-holder">
+												<i class="star green-rated"></i>
+												<i class="star green-rated"></i>
+												<i class="star green-rated"></i>
+												<i class="star green-rated"></i>
+												<i class="star green-partial"></i>
+										 	 </div> 
+										 <div class="review-title">
+										  </div> 
+										  <div class="review-text">
+											<p class="review-text">
+											Le logiciel est super et surtout gratuit!</p>
+										  </div>
+										  <div class="review-reviewer">
+											<div class="reviewer">Kelly McNamara</div>
+										  </div>
+										</div>
+										
+										 <div class="review">
+											<div class="star-holder">
+												<i class="star green-rated"></i>
+												<i class="star green-rated"></i>
+												<i class="star green-rated"></i>
+												<i class="star green-rated"></i>
+												<i class="star green-partial"></i>
+										  </div> 
+										 <div class="review-title">
+										  </div>  
+										  <div class="review-text">
+											<p>
+											Parfait! tout ce qu'il me manquait se trouve dans ce logiciel open source. Et c'est gratuit, vraiment rien à dire.</p>
+										  </div>
+										  <div class="review-reviewer">
+											<div class="reviewer">Aisling McCool</div>
+										  </div>
+										</div>				
+					</article>
+				</div>
+
+					<div class="filterDiv bureau">
+					<input type="checkbox" id="check-10" />
+					<label for="check-10"><strong>Phenix Agenda</strong>
+						<img src="img/linux.png">
+						<img src="img/windows.png">
+						<img src="img/mac.png">
+						<img src="img/arrow.png">
+					</label>
+					<div class="star-holder">
+							<i class="star green-rated"></i>
+							<i class="star green-rated"></i>
+							<i class="star green-rated"></i>
+							<i class="star green-rated"></i>
+							<i class="star green-partial"></i>
+					</div>
+					<h3>14 avis</h3>
+					<img src="img/BUREAUTIQUE/PhenixAgenda.png">
+					<h1>Phenix est un agenda
+							partagé multi-langues
+							et multiutilisateurs
+							accessible par une
+							interface web.
+							Sa stabilité et ses
+							fonctionnalités
+							étendues permettent
+							de l’utiliser dans un
+							environnement
+							professionnel et dans
+							des entreprises de
+							tout type et de toute
+							taille. </h1>
+					<article>
+						<p>
+							&bull;Possibilité de saisir des notes avec plusieurs options de périodicité et de rappels.</br>
+							&bull;Possibilité d’affecter une note à d’autres utilisateurs.</br>
+							&bull;Multi-vues : quotidienne, hebdomadaire, mensuelle et annuelle.</br>
+							&bull;Plannings globaux pour visualiser les notes de plusieurs utilisateurs sur un même écran.</br>
+							&bull;Carnet d’adresse avec partage possible des contacts entre plusieurs utilisateurs.</br>
+							&bull;Gestion d’un profil personnalisable avec choix de l’identifiant et du mot de passe, des heures de début et de fin de journée, des droits d’accès à votre agenda, de l’apparence de l’interface...</br>
+							&bull;Rappels des notes par popup et mail.</br>
+							&bull;Affichage des disponibilités croisées entre plusieurs utilisateurs.</br>
+							&bull;Module PDA et Smartphone.</br>
+							&bull;Module i-mode™ pour pouvoir gérer son agenda et consulter son agenda depuis son GSM (si compatible).</br>
+							&bull;Import / Export des notes et des contacts aux formats iCal, Cal et autres...</br>
+							&bull;Consultation de l’agenda via un flux RSS.</br>
+							&bull;Module complet d’administration.</br>
+							&bull;Interface personnalisable.</br>
+							&bull;Installateur / désinstalleur de MOD pour personnaliser Phenix.</br>
+						</p>
+						<img src="img/BUREAUTIQUE/screen-phenixagenda.png">
+						<hr class="hgreen"/>
+							<div class="review-container">
+										<div class="review">
+											<div class="star-holder">
+												<i class="star green-rated"></i>
+												<i class="star green-rated"></i>
+												<i class="star green-rated"></i>
+												<i class="star green-rated"></i>
+												<i class="star green-partial"></i>
+										 	 </div> 
+										 <div class="review-title">
+										  </div> 
+										  <div class="review-text">
+											<p class="review-text">
+											Le logiciel est super et surtout gratuit!</p>
+										  </div>
+										  <div class="review-reviewer">
+											<div class="reviewer">Kelly McNamara</div>
+										  </div>
+										</div>
+										
+										 <div class="review">
+											<div class="star-holder">
+												<i class="star green-rated"></i>
+												<i class="star green-rated"></i>
+												<i class="star green-rated"></i>
+												<i class="star green-rated"></i>
+												<i class="star green-partial"></i>
+										  </div> 
+										 <div class="review-title">
+										  </div>  
+										  <div class="review-text">
+											<p>
+											Parfait! tout ce qu'il me manquait se trouve dans ce logiciel open source. Et c'est gratuit, vraiment rien à dire.</p>
+										  </div>
+										  <div class="review-reviewer">
+											<div class="reviewer">Aisling McCool</div>
+										  </div>
+										</div>
+					</article>
+				</div>
+
+				<div class="filterDiv bureau">
+						<input type="checkbox" id="check-11" />
+						<label for="check-11"><strong>Sun bird</strong>
+							<img src="img/linux.png">
+							<img src="img/windows.png">
+							<img src="img/mac.png">
+							<img src="img/arrow.png">
+						</label>
+						<div class="star-holder">
+								<i class="star green-rated"></i>
+								<i class="star green-rated"></i>
+								<i class="star green-rated"></i>
+								<i class="star green-rated"></i>
+								<i class="star green-partial"></i>
+						</div>
+						<h3>22 avis</h3>
+						<img src="img/BUREAUTIQUE/Sunbird.png">
+						<h1>Mozilla Sunbird est un
+								agenda permettant de
+								répertorier vos différents
+								rendez-vous et travaux en
+								cours.
+								Littéralement appelé
+								« Oiseau du soleil », cette
+								application partage les
+								mêmes composants que
+								Lightning, qui est une
+								extension pour le logiciel
+								de messagerie
+								Thunderbird.
+								Entièrement autonome, elle
+								ne nécessite pas
+								l’installation préalable
+								d’autres logiciels.
+								Mozilla Sunbird n’est
+								désormais plus maintenu
+								par Mozilla. Il est conseillé
+								aux utilisateurs de migrer
+								vers Mozilla Lightning
+								intégré dans Mozilla
+								Thunderbird.
+						</h1>
+						<article>
+							<p>
+								&bull;Enregistrement d’évènements et d’activités</br>
+								&bull;Intégration possible de notes et adresses Web</br>
+								&bull;Système d’alerte</br>
+								&bull;Modification de la vue du calendrier</br>
+								&bull;Système multi-calendriers</br>
+							</p>	
+							<img src="img/BUREAUTIQUE/screen-sunbird.png">
+							<hr class="hgreen"/>
+							<div class="review-container">
+										<div class="review">
+											<div class="star-holder">
+												<i class="star green-rated"></i>
+												<i class="star green-rated"></i>
+												<i class="star green-rated"></i>
+												<i class="star green-rated"></i>
+												<i class="star green-partial"></i>
+										 	 </div> 
+										 <div class="review-title">
+										  </div> 
+										  <div class="review-text">
+											<p class="review-text">
+											Le logiciel est super et surtout gratuit!</p>
+										  </div>
+										  <div class="review-reviewer">
+											<div class="reviewer">Kelly McNamara</div>
+										  </div>
+										</div>
+										
+										 <div class="review">
+											<div class="star-holder">
+												<i class="star green-rated"></i>
+												<i class="star green-rated"></i>
+												<i class="star green-rated"></i>
+												<i class="star green-rated"></i>
+												<i class="star green-partial"></i>
+										  </div> 
+										 <div class="review-title">
+										  </div>  
+										  <div class="review-text">
+											<p>
+											Parfait! tout ce qu'il me manquait se trouve dans ce logiciel open source. Et c'est gratuit, vraiment rien à dire.</p>
+										  </div>
+										  <div class="review-reviewer">
+											<div class="reviewer">Aisling McCool</div>
+										  </div>
+										</div>					
+						</article>
+				</div>
+
+				<div class="filterDiv bureau">
+						<input type="checkbox" id="check-12" />
+						<label for="check-12"><strong>Libre office</strong>
+							<img src="img/linux.png">
+							<img src="img/windows.png">
+							<img src="img/mac.png">
+							<img src="img/arrow.png">
+						</label>
+						<div class="star-holder">
+								<i class="star green-rated"></i>
+								<i class="star green-rated"></i>
+								<i class="star green-rated"></i>
+								<i class="star green-rated"></i>
+								<i class="star green-partial"></i>
+						</div>
+						<h3>18 avis</h3>
+						<img src="img/BUREAUTIQUE/LibreOffice.png">
+						<h1>Cette suite intègre toutes
+								les applications usuelles
+								telles qu’un traitement de
+								texte, un tableur, un outil de
+								présentation, un
+								gestionnaire de formules
+								mathématiques. Basée sur
+								OpenOffice.org, LibreOffice
+								en reprend le
+								fonctionnement mais avec
+								quelques adaptations de
+								l’interface graphique.
+								L’application dispose d’une
+								compatibilité avec les
+								formats du Pack Office de
+								Microsoft et
+								OpenOffice.org.</h1>	
+						<article>
+							<p>
+								&bull;Le traitement de texte Writer</br>
+								&bull;Le tableur Calc</br>
+								&bull;Le module de composition de diaporama Impress</br>
+								&bull;Le module de dessin vectoriel Draw pour les schémas et les illustrations simples</br>
+								&bull;Le module de gestion de bases de données Base</br>
+								&bull;Le module de composition mathématique Math</br>
+							</p>
+							<img src="img/BUREAUTIQUE/screen-sunbird.png">	
+							<hr class="hgreen"/>
+							<div class="review-container">
+										<div class="review">
+											<div class="star-holder">
+												<i class="star green-rated"></i>
+												<i class="star green-rated"></i>
+												<i class="star green-rated"></i>
+												<i class="star green-rated"></i>
+												<i class="star green-partial"></i>
+										 	 </div> 
+										 <div class="review-title">
+										  </div> 
+										  <div class="review-text">
+											<p class="review-text">
+											Le logiciel est super et surtout gratuit!</p>
+										  </div>
+										  <div class="review-reviewer">
+											<div class="reviewer">Kelly McNamara</div>
+										  </div>
+										</div>
+										
+										 <div class="review">
+											<div class="star-holder">
+												<i class="star green-rated"></i>
+												<i class="star green-rated"></i>
+												<i class="star green-rated"></i>
+												<i class="star green-rated"></i>
+												<i class="star green-partial"></i>
+										  </div> 
+										 <div class="review-title">
+										  </div>  
+										  <div class="review-text">
+											<p>
+											Parfait! tout ce qu'il me manquait se trouve dans ce logiciel open source. Et c'est gratuit, vraiment rien à dire.</p>
+										  </div>
+										  <div class="review-reviewer">
+											<div class="reviewer">Aisling McCool</div>
+										  </div>
+										</div>					
+						</article>
+				</div>
+
+				<div class="filterDiv projets">
+						<input type="checkbox" id="check-13" />
+						<label for="check-13"><strong>Project Libre</strong>
+							<img src="img/linux.png">
+							<img src="img/windows.png">
+							<img src="img/mac.png">
+							<img src="img/arrow.png">
+						</label>
+						<div class="star-holder">
+								<i class="star yellow-rated"></i>
+								<i class="star yellow-rated"></i>
+								<i class="star yellow-rated"></i>
+								<i class="star yellow-rated"></i>
+								<i class="star yellow-partial"></i>
+						</div>
+						<h3>5 avis</h3>
+						<img src="img/PROJET/ProjectLibre.png">
+						<h1>ProjectLibre est un planificateur de projet développé afin d’offrir une alternative à Microsoft Project et de permettre d’utiliser
+								ses fichiers créés avec ce dernier.
+								Vous pourrez générer des représentations graphiques de vos projets sous de nombreux formats et les exporter dans des formats ouverts,
+								compatibles avec de nombreux autres logiciels.</h1>
+						<article>
+							<p>
+								&bull;Compatibilité avec Microsoft Project version 2010</br>
+								&bull;Interface utilisateur ruban</br>
+								&bull;Gestion de la valeur acquise pour les coûts</br>
+								&bull;Diagramme de Gantt, PERT, RBS et WBS</br>
+								&bull;Rapport d’exécution des tâches</br>
+							</p>
+							<img src="img/PROJET/screen-projectlibre.jpg">
+							<hr class="hyellow"/>
+							<div class="review-container">
+										<div class="review">
+											<div class="star-holder">
+												<i class="star yellow-rated"></i>
+												<i class="star yellow-rated"></i>
+												<i class="star yellow-rated"></i>
+												<i class="star yellow-rated"></i>
+												<i class="star yellow-partial"></i>
+										 	 </div> 
+										 <div class="review-title">
+										  </div> 
+										  <div class="review-text">
+											<p class="review-text">
+											Le logiciel est super et surtout gratuit!</p>
+										  </div>
+										  <div class="review-reviewer">
+											<div class="reviewer">Kelly McNamara</div>
+										  </div>
+										</div>
+										
+										 <div class="review">
+											<div class="star-holder">
+												<i class="star yellow-rated"></i>
+												<i class="star yellow-rated"></i>
+												<i class="star yellow-rated"></i>
+												<i class="star yellow-rated"></i>
+												<i class="star yellow-partial"></i>
+										  </div> 
+										 <div class="review-title">
+										  </div>  
+										  <div class="review-text">
+											<p>
+											Parfait! tout ce qu'il me manquait se trouve dans ce logiciel open source. Et c'est gratuit, vraiment rien à dire.</p>
+										  </div>
+										  <div class="review-reviewer">
+											<div class="reviewer">Aisling McCool</div>
+										  </div>
+										</div>
+						</article>
+				</div>
+
+				<div class="filterDiv projets">
+						<input type="checkbox" id="check-14" />
+						<label for="check-14"><strong>Gantt projet</strong>
+							<img src="img/linux.png">
+							<img src="img/windows.png">
+							<img src="img/mac.png">
+							<img src="img/arrow.png">
+						</label>
+						<div class="star-holder">
+								<i class="star yellow-rated"></i>
+								<i class="star yellow-rated"></i>
+								<i class="star yellow-rated"></i>
+								<i class="star yellow-rated"></i>
+								<i class="star yellow-partial"></i>
+						</div>
+						<h3>14 avis</h3>
+						<img src="img/PROJET/GANTTPROJ.png">
+						<h1>GanttProject permet la planification de projets dans le temps et par tâches à l’aide du diagramme de Gantt.
+								Il propose les fonctionnalités de base de ce type d’outil, comme la création des tâches, l’affectation des ressources,
+								la gestion des dépendances et de l’avancement, mais dispose également de propriétés plus avancées comme l’exportation
+								des documents en HTML ou PDF et le travail collaboratif à distance sur Internet.</h1>
+						<article>
+							<p>
+								&bull; Gestion des jours fériés et des vacances </br>
+								&bull;Sauvegarde au format XML</br>
+								&bull;Export au format HTML,PDF et des diagrammes en PNG ou JPEG</br>
+								&bull;Multilingue</br>
+								&bull;Compatibilité avec Microsoft Project</br>
+							</p>
+							<img src="img/PROJET/screen-gantt.png">		
+							<hr class="hyellow"/>
+							<div class="review-container">
+										<div class="review">
+											<div class="star-holder">
+												<i class="star yellow-rated"></i>
+												<i class="star yellow-rated"></i>
+												<i class="star yellow-rated"></i>
+												<i class="star yellow-rated"></i>
+												<i class="star yellow-partial"></i>
+										 	 </div> 
+										 <div class="review-title">
+										  </div> 
+										  <div class="review-text">
+											<p class="review-text">
+											Le logiciel est super et surtout gratuit!</p>
+										  </div>
+										  <div class="review-reviewer">
+											<div class="reviewer">Kelly McNamara</div>
+										  </div>
+										</div>
+										
+										 <div class="review">
+											<div class="star-holder">
+												<i class="star yellow-rated"></i>
+												<i class="star yellow-rated"></i>
+												<i class="star yellow-rated"></i>
+												<i class="star yellow-rated"></i>
+												<i class="star yellow-partial"></i>
+										  </div> 
+										 <div class="review-title">
+										  </div>  
+										  <div class="review-text">
+											<p>
+											Parfait! tout ce qu'il me manquait se trouve dans ce logiciel open source. Et c'est gratuit, vraiment rien à dire.</p>
+										  </div>
+										  <div class="review-reviewer">
+											<div class="reviewer">Aisling McCool</div>
+										  </div>
+										</div>		
+						</article>
+				</div>
+
+				<div class="filterDiv projets">
+						<input type="checkbox" id="check-15" />
+						<label for="check-15"><strong>X mind</strong>
+							<img src="img/linux.png">
+							<img src="img/windows.png">
+							<img src="img/mac.png">
+							<img src="img/arrow.png">
+						</label>
+						<div class="star-holder">
+								<i class="star yellow-rated"></i>
+								<i class="star yellow-rated"></i>
+								<i class="star yellow-rated"></i>
+								<i class="star yellow-rated"></i>
+								<i class="star yellow-partial"></i>
+						</div>
+						<h3>22 avis</h3>
+						<img src="img/PROJET/Xmind.png">
+						<h1>XMind est un logiciel open source de création de cartes heuristiques, d’organigrammes,
+								cartes, plans et autres schémas.
+								Très simple d’utilisation, l’application vous permet d’éditer toutes les parties de votre organigramme,
+								d’ajouter des images et des liens, d’insérer du texte, d’intégrer des marqueurs de priorité ou des annotations.
+								Vous pourrez également attacher un document externe, imprimer, et exporter votre projet aux formats HTML, image, texte.</h1>
+						<article>
+							<p>
+								&bull;Création de diagramme de causes et effets (diagramme d’Ishikawa)</br>
+								&bull;Création de matrice</br>
+								&bull;Adapté au brainstorming</br>
+								&bull;Mode de vue diagramme de Gantt</br>
+								&bull;Nombreux modes d’exportation et d’importation</br>
+								&bull;Affichage des schémas en ligne</br>
+								&bull;Thèmes et personnalisation</br>
+							</p>
+							<img src="img/PROJET/screen-xmind.jpg">
+							<hr class="hyellow"/>
+							<div class="review-container">
+										<div class="review">
+											<div class="star-holder">
+												<i class="star yellow-rated"></i>
+												<i class="star yellow-rated"></i>
+												<i class="star yellow-rated"></i>
+												<i class="star yellow-rated"></i>
+												<i class="star yellow-partial"></i>
+										 	 </div> 
+										 <div class="review-title">
+										  </div> 
+										  <div class="review-text">
+											<p class="review-text">
+											Le logiciel est super et surtout gratuit!</p>
+										  </div>
+										  <div class="review-reviewer">
+											<div class="reviewer">Kelly McNamara</div>
+										  </div>
+										</div>
+										
+										 <div class="review">
+											<div class="star-holder">
+												<i class="star yellow-rated"></i>
+												<i class="star yellow-rated"></i>
+												<i class="star yellow-rated"></i>
+												<i class="star yellow-rated"></i>
+												<i class="star yellow-partial"></i>
+										  </div> 
+										 <div class="review-title">
+										  </div>  
+										  <div class="review-text">
+											<p>
+											Parfait! tout ce qu'il me manquait se trouve dans ce logiciel open source. Et c'est gratuit, vraiment rien à dire.</p>
+										  </div>
+										  <div class="review-reviewer">
+											<div class="reviewer">Aisling McCool</div>
+										  </div>
+										</div>
+						</article>
+				</div>
+
+				<div class="filterDiv projets">
+						<input type="checkbox" id="check-16" />
+						<label for="check-16"><strong>Open proj</strong>
+							<img src="img/linux.png">
+							<img src="img/windows.png">
+							<img src="img/mac.png">
+							<img src="img/arrow.png">
+						</label>
+						<div class="star-holder">
+								<i class="star yellow-rated"></i>
+								<i class="star yellow-rated"></i>
+								<i class="star yellow-rated"></i>
+								<i class="star yellow-rated"></i>
+								<i class="star yellow-partial"></i>
+						</div>
+						<h3>31 avis</h3>
+						<img src="img/PROJET/OPENPROJ.png">
+						<h1>OpenProj est un planificateur de projet s’inspirant de Microsoft Project et permettant de lire et d’éditer les fichiers de ce dernier. 
+								Il n’est cependant plus maintenu depuis 2009.
+								Outre cette compatibilité, le logiciel permet la planification de tâches avec association de dépendances, de ressources,
+								et un état d’avancement ou une catégorie.</h1>
+						<article>
+							<p>
+								&bull;Multiples formats supportés</br>
+								&bull;Multi-plateformes</br>
+								&bull;Gestion de projet et de portfolio</br>
+								&bull;Gestion de projet suivant la méthode Agile</br>
+							</p>
+							<img src="img/PROJET/screen-openproj.png">
+							<hr class="hyellow"/>
+							<div class="review-container">
+										<div class="review">
+											<div class="star-holder">
+												<i class="star yellow-rated"></i>
+												<i class="star yellow-rated"></i>
+												<i class="star yellow-rated"></i>
+												<i class="star yellow-rated"></i>
+												<i class="star yellow-partial"></i>
+										 	 </div> 
+										 <div class="review-title">
+										  </div> 
+										  <div class="review-text">
+											<p class="review-text">
+											Le logiciel est super et surtout gratuit!</p>
+										  </div>
+										  <div class="review-reviewer">
+											<div class="reviewer">Kelly McNamara</div>
+										  </div>
+										</div>
+										
+										 <div class="review">
+											<div class="star-holder">
+												<i class="star yellow-rated"></i>
+												<i class="star yellow-rated"></i>
+												<i class="star yellow-rated"></i>
+												<i class="star yellow-rated"></i>
+												<i class="star yellow-partial"></i>
+										  </div> 
+										 <div class="review-title">
+										  </div>  
+										  <div class="review-text">
+											<p>
+											Parfait! tout ce qu'il me manquait se trouve dans ce logiciel open source. Et c'est gratuit, vraiment rien à dire.</p>
+										  </div>
+										  <div class="review-reviewer">
+											<div class="reviewer">Aisling McCool</div>
+										  </div>
+										</div>
+						</article>
+				</div>
+
+			</div>
+
+
+	<!-- TOP PROJETS ------------------------------------------------------------------------->
+
+	<div id="top"></div>
+
+	<br><br><br><br><br>
+
+				<div class="actualité">
+					<h3>Actualité</h3>
+					<br>
+					<hr>
+				</div>
+				
+				<p>Ces projets sont promu par la Fondation Mozilla</p>
+
+
+	<div class="carousel">
+  <div class="carousel__nav">
+   <span id="moveLeft" class="carousel__arrow">
+        <svg class="carousel__icon" width="24" height="24" viewBox="0 0 24 24">
+    <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
+</svg>
+    </span>
+    <span id="moveRight" class="carousel__arrow" >
+      <svg class="carousel__icon"  width="24" height="24" viewBox="0 0 24 24">
+  <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
+</svg>    
+    </span>
+  </div>
+  <div class="carousel-item carousel-item--1">
+    <div class="carousel-item__image"></div>
+    <div class="carousel-item__info">
+      <div class="carousel-item__container">
+      <h2 class="carousel-item__subtitle">Reconnaissance faciale</h2>
+      <h1 class="carousel-item__title">Reconnaissance faciale</h1>
+      <p class="carousel-item__description">La reconnaissance faciale est actuellement considérée comme une innovation technologique basée sur l’apprentissage automatique qui améliore la sécurité, devenant ainsi votre code pour deverouiller votre téléphone, effectuer des paiement mobile ou encore de la surveillance en masse dans certain pays.</p>
+      <a href="https://www.comuzi.xyz/invisiblemask.html" class="carousel-item__btn">Voir le site</a>
+        </div>
+    </div>
+  </div>
+  <div class="carousel-item carousel-item--2">
+    <div class="carousel-item__image"></div>
+    <div class="carousel-item__info">
+      <div class="carousel-item__container">
+      <h2 class="carousel-item__subtitle">Ingénieurs en logiciels libres</h2>
+      <h1 class="carousel-item__title">Posse</h1>
+      <p class="carousel-item__description">Posse est un programme de mentorat entre pairs qui donne aux participants l’OSS des compétences en leadership ouvert, ainsi que des connaissances et des outils pratiques pour la construction d'une communautés open source durables et saines. Le programme POSSE couvrira les principes suivants: leadership ouvert, licences en open source, métriques permettant de mesurer la santé du projet, moyens de développer votre communauté et ça durabilité.</p>
+      <a href="https://posse.community/" class="carousel-item__btn">Voir le site</a>
+        </div>
+    </div>
+  </div>
+    <div class="carousel-item carousel-item--3">
+    <div class="carousel-item__image"></div>
+    <div class="carousel-item__info">
+      <div class="carousel-item__container">
+      <h2 class="carousel-item__subtitle">Face cachée de la publicité en ligne</h2>
+      <h1 class="carousel-item__title">Face cachée </h1>
+      <p class="carousel-item__description">Nous faisons confiance au secteur de la publicité lorsqu'il est dit que la publicité ciblée est une solution gagnante: les utilisateurs voient les annonces pertinentes, les annonceurs atteignent le bon public et les paye pour le contenu. Ce n'est que lorsque nous examinons de plus près les rouages ​​de la publicité ciblée que nous comprenons les differentes implications.</p>
+      <a href="https://medium.com/@ka.iwanska/mozfest-2019-the-hidden-face-of-online-advertising-8585e26c43fc" class="carousel-item__btn">Voir le site</a>
+        </div>
+    </div>
+  </div>
+  
+   <div class="carousel-item carousel-item--4">
+    <div class="carousel-item__image"></div>
+    <div class="carousel-item__info">
+      <div class="carousel-item__container">
+      <h2 class="carousel-item__subtitle">Une bibliothèque numérique à code source ouvert pour les Africains </h2>
+      <h1 class="carousel-item__title">Code source ouvert </h1>
+      <p class="carousel-item__description">Seinfo est une bibliothèque open source permettant aux Africains d’acquérir des compétences numériques nécessaires pour pouvoir travailler en freelance , à distance ou en entrepreneuriat.</p>
+      <a href="https://www.seinfo.org/" class="carousel-item__btn">Voir le site</a>
+        </div>
+    </div>
+  </div>
+  
+ <div class="carousel-item carousel-item--5">
+    <div class="carousel-item__image"></div>
+    <div class="carousel-item__info">
+      <div class="carousel-item__container">
+      <h2 class="carousel-item__subtitle">Our data futur</h2>
+      <h1 class="carousel-item__title">Our data futur</h1>
+      <p class="carousel-item__description">Notre environnement numérique évolue rapidement. Personne ne sait exactement à quoi cela va ressembler dans cinq ou dix ans, mais nous savons que la manière dont nous produisons et partageons nos données changera là où nous aboutirons.</p>
+      <a href="https://privacyinternational.org/long-read/3088/our-data-future" class="carousel-item__btn">Voir le site</a>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+	<!-- FIN DES TOP PROJETS ----------------------------------------------------------------->
+
+	<!-- NEWSLETTER --------------------------------------------------------------------------->
+<div id="newsletter"></div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+	<div class="newsletter" >
+		<h3>Newsletter</h3>
+		<br>
+		<hr>
 	</div>
 
-	<!-- PARTIE 2 -->
-	<div class="Partie-2">
-		<p>Lorem Ipsum</p>
+	<br><br><br>
+
+	<div class="newsletter_gauche">
+		<p>Abonnez-vous à notre newsletter pour être au courant de toute les nouveauté !</p>
+
+		<br><br><br>
+
+		<div class="email">
+			<label for="email">Votre E-mail</label>
+			<input type="email" id="email" pattern=".+@globex.com" size="30" required>
+		</div>
 	</div>
 
-	<!-- PARTIE 3 -->
-	<div class="Partie-3">
-		<p>Lorem Ipsum</p>
+	<div class="newsletter_droite">
+		<button><a href="#" class="button_send">Envoyer</a></button>
 	</div>
 
-	<!-- PARTIE 4 -->
-	<div class="Partie-4">
-		<p>Lorem Ipsum</p>
-	</div>
+	<br><br><br><br><br>
 
+	<!-- NEWSLETTER --------------------------------------------------------------------------->
 
-	<!-- LOGICIELS -->
+	<!-- FOOTER -------------------------------------------------------------------------------->
 
+	<footer>
+		<div class="mentions">
+			<a href="#">Mentions légales</a>
+		</div>
+		<a href="#return_top"><img src="img/arrow_return_top.png"></a>
+		<div class="reseaux_mozilla">
+			<li><a href="https://www.instagram.com/mozilla/"><img class="instagram" src="img/instagram.png"></a></li>
+			<li><a href="https://github.com/mozilla/foundation.mozilla.org/"><img class="github" src="img/github.png"></a></li>
+			<li><a href="https://twitter.com/mozilla"><img class="twitter" src="img/twitter.png"></a></li>
+		</div>
+	</footer>
 
-	<!-- NEWSLETTER -->
+	<!-- FIN DU FOOTER ---------------------------------------------------->
 
-
-	<!-- FOOTER -->
-
+	 <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  		crossorigin="anonymous"></script>
+	 <script type="text/javascript" src="javascript.js"></script>
 </body>
+
 </html>
